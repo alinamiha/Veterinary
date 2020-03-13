@@ -31,7 +31,7 @@ $slider_id = rand(100, 10000);
 
                 <div class="content <?php esc_attr_e($l['content-class']); ?>">
 
-                   <?php et_back_to_page();?>
+                    <?php et_back_to_page(); ?>
 
                     <div style="border: 1px solid #E5E5E5;margin: 20px 0;"></div>
 
@@ -141,9 +141,8 @@ $slider_id = rand(100, 10000);
 
                                     ?>
                                 </div>
-<!--                                <a class="consulting" href="#">Консультация специалиста ></a>-->
+                                <!--                                <a class="consulting" href="#">Консультация специалиста ></a>-->
                             </div>
-
 
 
                             <?php if (etheme_get_option('about_author')): ?>
@@ -173,14 +172,30 @@ $slider_id = rand(100, 10000);
                     <?php comments_template('', true); ?>
 
                 </div>
-
-                <?php get_sidebar(); ?> 
-
+                <div class="col-md-3 col-md-pull-9 sidebar sidebar-left">
+                    <div class="sidebar-widget widget_categories">
+                        <ul>
+                            <?php if (have_posts()):?>
+                                <?php foreach (get_the_category() as $category) {
+                                    while (have_posts()) : the_post(); ?>
+                                        <li class="side-li"><?php echo $category->name; ?></li>
+                                        <div style="border: 1px solid #E5E5E5;"></div>
+                                        <ul class="side-ul">
+                                            <li>
+                                                <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                                            </li>
+                                        </ul>
+                                    <?php endwhile; ?>
+                                <?php }?>
+                            <?php endif; ?>
+                            
+                        </ul>
+                    </div>
+                </div>
             </div>
 
         </div>
     </div>
-
 <?php
 get_footer();
 ?>

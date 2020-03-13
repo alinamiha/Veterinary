@@ -1,0 +1,63 @@
+Index: wp-content/themes/woopress/general-categories.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n/**\r\n * Created by PhpStorm.\r\n * User: Admin\r\n * Date: 3/10/2020\r\n * Time: 9:24 PM\r\n * Template name: allCat\r\n */\r\nget_header();\r\n?>\r\n<?php do_action( 'et_page_heading' ); ?>\r\n    <div class=\"directory-container <?php echo (!$full_width) ? 'container' : 'blog-full-width'; ?>\">\r\n        <div class=\"page-content sidebar-position-<?php esc_attr_e( $l['sidebar'] ); ?> sidebar-mobile-<?php esc_attr_e( $l['sidebar-mobile'] ); ?>\">\r\n            <div class=\"row flex\">\r\n                <div class=\"content <?php esc_attr_e( $l['content-class'] ); ?>\">\r\n                    <div class=\"directory-page <?php if ($content_layout == 'grid'): ?>blog-masonry row<?php endif ?>\">\r\n                        <h4 class=\"active\">Все категории</h4>\r\n                        <div style=\"border: 1px solid #E5E5E5;\"></div>\r\n                        <div class=\"block-with-post gen-cat\">\r\n\r\n                            <div class=\"content <?php esc_attr_e($l['content-class']); ?>\">\r\n                                <?php if (have_posts()): while (have_posts()) : the_post(); ?>\r\n                                    <ul>\r\n                                        <?php wp_list_categories( array(\r\n//                                            'orderby'    => 'name',\r\n//                                            'show_count' => true,\r\n                                            'child_of'            => 0,\r\n                                            'title_li' => '',\r\n                                            'exclude'    => array( 31 )\r\n                                        ) ); ?>\r\n                                    </ul>\r\n<!--                                --><?php //wp_dropdown_categories(array('hide_empty' => 0, 'name' => 'category_parent', 'orderby' => 'name', 'selected' => $category->parent, 'hierarchical' => true, 'show_option_none' => __('None')));?>\r\n                                    <?php the_content(); ?>\r\n\r\n\r\n                                <?php endwhile; else: ?>\r\n\r\n                                    <h3><?php _e('Страница не найдена!', ET_DOMAIN) ?></h3>\r\n\r\n                                <?php endif; ?>\r\n\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n<?php\r\nget_footer();
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- wp-content/themes/woopress/general-categories.php	(revision 2b481d9a1754be3ac8c75d345e1f27fb4f27e2dd)
++++ wp-content/themes/woopress/general-categories.php	(date 1583878535996)
+@@ -29,6 +29,53 @@
+                                             'exclude'    => array( 31 )
+                                         ) ); ?>
+                                     </ul>
++                                <?php
++                                    $categories = get_categories( [
++                                        'taxonomy'     => 'category',
++                                        'type'         => 'post',
++                                        'child_of'     => 0,
++                                        'parent'       => '',
++                                        'orderby'      => 'name',
++                                        'order'        => 'ASC',
++                                        'hide_empty'   => 1,
++                                        'hierarchical' => 1,
++                                        'exclude'      => '',
++                                        'include'      => '',
++                                        'number'       => 0,
++                                        'pad_counts'   => false,
++                                        // полный список параметров смотрите в описании функции http://wp-kama.ru/function/get_terms
++                                    ] );
++
++                                    if( $categories ){
++                                        foreach( $categories as $cat ){
++                                            // Данные в объекте $cat
++                                             ?>
++
++
++                                            <div>
++                                                <a href="#"><?php echo $cat->name ?></a>
++                                            </div>
++
++                                            <?php
++                                            // $cat->term_id
++                                            // $cat->name (Рубрика 1)
++                                            // $cat->slug (rubrika-1)
++                                            // $cat->term_group (0)
++                                            // $cat->term_taxonomy_id (4)
++                                            // $cat->taxonomy (category)
++                                            // $cat->description (Текст описания)
++                                            // $cat->parent (0)
++                                            // $cat->count (14)
++                                            // $cat->object_id (2743)
++                                            // $cat->cat_ID (4)
++                                            // $cat->category_count (14)
++                                            // $cat->category_description (Текст описания)
++                                            // $cat->cat_name (Рубрика 1)
++                                            // $cat->category_nicename (rubrika-1)
++                                            // $cat->category_parent (0)
++
++                                        }
++                                    }?>
+ <!--                                --><?php //wp_dropdown_categories(array('hide_empty' => 0, 'name' => 'category_parent', 'orderby' => 'name', 'selected' => $category->parent, 'hierarchical' => true, 'show_option_none' => __('None')));?>
+                                     <?php the_content(); ?>
+ 

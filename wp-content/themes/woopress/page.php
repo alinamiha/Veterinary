@@ -44,6 +44,10 @@ if ($_SERVER[REQUEST_URI]=="/"){
                     <h3><?php _e('No pages were found!', ET_DOMAIN) ?></h3>
 
                 <?php endif; ?>
+                <?php
+
+
+                ?>
 
             </div>
 

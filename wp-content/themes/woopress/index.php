@@ -29,23 +29,52 @@
 		<div class="row flex">
 			<div class="content <?php esc_attr_e( $l['content-class'] ); ?>">
 				<div class="directory-page <?php if ($content_layout == 'grid'): ?>blog-masonry row<?php endif ?>">
-                    <h4 class="active"><?php the_category(',&nbsp;') ?></h4>
-                    <div style="border: 1px solid #E5E5E5;"></div>
                     <div class="block-with-post">
 
-                    <?php if(have_posts()):
-						while(have_posts()) : the_post(); ?>
-                                <p class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                        <?php if (is_category()) : ?>
+                            <?php
+                            $thisCat = get_category(get_query_var('cat'), false);
+                            $categories = get_categories(array(
+                                'orderby' => 'name',
+                                'parent' => $thisCat->term_taxonomy_id
+                            ));
+                            if ($categories) {
+                                foreach ($categories as $category) {
 
-<!--                            --><?php //get_template_part('content', $content_layout); ?>
+                                    echo '<div class="test_sub_cat"><p>' . $category->name . '</p><div style="border: 1px solid #E5E5E5;"></div>';
+                                    # получаем записи из рубрики
+                                    $myposts = get_posts(array(
+                                        'numberposts' => -1,
+                                        'category' => $category->cat_ID,
+                                        'orderby' => 'post_date',
+                                        'order' => 'DESC',
+                                    ));
+                                    # выводим записи
+                                    echo '<ul>';
+                                    global $post;
+                                    foreach ($myposts as $post) {
+                                        setup_postdata($post);
+                                        echo '<li class="entry-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+                                    }
+                                    wp_reset_postdata(); // сбрасываем глобальную переменную пост
+                                    echo '</ul>';
+                                    echo '</div>';
+                                }
+                            } else {
+                                ?>
+                                <?php $posts = get_posts("category=$thisCat->cat_ID&numberposts=$post->ID"); ?>
+                                <?php if ($posts) : ?>
+                                    <?php foreach ($posts as $post) : setup_postdata($post); ?>
+                                        <a class="link-alone" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                    <?php endforeach; ?>
+                                <?php endif;
 
-						<?php endwhile; ?>
-					<?php else: ?>
 
-						<h1><?php _e('No posts were found!', ET_DOMAIN) ?></h1>
-
-					<?php endif; ?>
+                            }
+                        endif; ?>
                     </div>
+
+
 
                     <?php if (etheme_get_option('post_related')): ?>
                         <div class="related-posts">
@@ -59,6 +88,22 @@
 					<div class="right"><?php previous_posts_link(__('Newer Posts &rarr;', ET_DOMAIN)); ?></div>
 					<div class="clear"></div>
 				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 			</div>
 

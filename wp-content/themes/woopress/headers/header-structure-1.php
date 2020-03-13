@@ -89,5 +89,36 @@
 	<?php endif; ?>
 </div>
 <div class="main-menu-sidebar">
-    <?php et_get_main_menu(); ?>
+<!--    --><?php //et_get_main_menu(); ?>
+    <ul class="main-menu-list">
+        <li><a href="http://www.veterinary.wiki/">Главная</a></li>
+        <li class="all-cat-ill">Каталог заболеваний</li>
+
+     <?php
+                                    $categories = get_categories([
+                                        'taxonomy' => 'category',
+                                        'type' => 'post',
+                                        'child_of' => 0,
+                                        'orderby' => 'count',
+                                        'parent' => '',
+
+                                    ]);
+     echo '<ul class="menu-all-cat">';
+
+     foreach ($categories as $cat) {
+         if ($categories && $cat->parent===0 && $cat->term_id!==31) {
+
+             echo '<li class=""><a href="http://www.veterinary.wiki/category/'.$cat->slug.'">'.$cat->name.' </a></li>';
+
+
+         }
+
+
+     }
+     echo '</ul>';
+     ?>
+
+        <li><a href="http://www.veterinary.wiki/category/%d0%bd%d0%b0%d1%88%d0%b8-%d0%b2%d1%80%d0%b0%d1%87%d0%b8/">Наши врачи</a></li>
+    </ul>
+
 </div>

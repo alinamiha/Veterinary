@@ -97,8 +97,6 @@
             <?php randomPosts(); ?>
             <div class="popular-post">
             <?php the_widget('Popular_Post')?>
-<!--                --><?php //$a = register_sidebar();
-//                var_dump($a); die;?>
             </div>
         </div>
         <div class="sidebar-right">

@@ -56,15 +56,51 @@ if (!function_exists('etheme_footer_demo')) {
 
                 ?>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="about-company">
-                            <a class="pull-left" href="#"><img
-                                                               src="/wp-content/themes/woopress/images/main-img/logo-footer.svg"
-                                                               alt="logo-footer"><br></a>
+                <div class="row footer-main">
+                    <div class="container block-footer-sidebar">
+                        <div class="first-block-footer">
+                            <div class="about-company">
+                                <a class="pull-left" href="#"><img src="/wp-content/themes/woopress/images/main-img/logo-footer.svg" alt="logo-footer"></a>
+                            </div>
+                            <h5 class="media-heading">Ветеринарная Энциклопедия</h5>
+                            <p>Veterinary Wiki является обширной библиотекой заболеваний, их причин и методах
+                                лечения, однако если вы заподозрили что с вашим животным что-либо не так,
+                                обращайтесь сразу к специалисту, так как ни один интернет ресурс не выявит
+                                симптоматику как консультация с профессиональным врачом. Veterinary Wiki также
+                                предоставляет возможность пообщаться напрямую с ветеринарными врачами и заказать у
+                                них консультацию. Самолечение может быть опасно для вашего животного.</p>
                         </div>
-                        <h5 class="media-heading">Ветеринарная Энциклопедия</h5>
+                        <div class="block-second-footer">
+                            <h5>Каталог заболеваний</h5>
+
+                            <?php
+                            $categories = get_categories([
+                                'taxonomy' => 'category',
+                                'type' => 'post',
+                                'child_of' => 0,
+                                'orderby' => 'count',
+                                'parent' => '',
+
+                            ]);
+                            echo '<ul class="footer-cat">';
+
+                            foreach ($categories as $cat) {
+                                if ($categories && $cat->parent===0 && $cat->term_id!==31) {
+
+                                    echo '<li class=""><a href="http://www.veterinary.wiki/category/'.$cat->slug.'">'.$cat->name.' </a></li>';
+
+
+                                }
+
+
+                            }
+                            echo '</ul>';
+                            ?>
+                        </div>
                         <p class="cop-text">Все права защищены Veterinary Wiki 2020</p>
+
+                    </div>
+
 <!--                        <address class="address-company">30 South Avenue San Francisco<br>-->
 <!--                            <span class="white-text">Phone</span>: +78 123 456 789<br>-->
 <!--                            <span class="white-text">Email</span>: <a href="mailto:Support@woopress.com">Support@woopress.com</a><br>-->

@@ -2119,6 +2119,15 @@ function toggleMainMenu(){
         jQuery('body').toggleClass('overflow');
 }
     jQuery('.carousel-item:first-child').addClass('active');
+jQuery('.all-cat-ill').on('click', function () {
+    jQuery('.menu-all-cat').slideToggle();
+    jQuery('.all-cat-ill').toggleClass('rotate');
+})
+jQuery('.side-li').on('click', function () {
+    jQuery('.side-ul').slideToggle();
+    jQuery('.all-cat-ill').toggleClass('rotate-side');
+})
+
 
 
 (function() {

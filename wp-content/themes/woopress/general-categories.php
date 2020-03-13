@@ -19,26 +19,55 @@ get_header();
                         <div class="block-with-post gen-cat">
 
                             <div class="content <?php esc_attr_e($l['content-class']); ?>">
-                                <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-                                    <ul>
-                                        <?php wp_list_categories( array(
-//                                            'orderby'    => 'name',
-//                                            'show_count' => true,
-                                            'child_of'            => 0,
-                                            'title_li' => '',
-                                            'exclude'    => array( 31 )
-                                        ) ); ?>
-                                    </ul>
-<!--                                --><?php //wp_dropdown_categories(array('hide_empty' => 0, 'name' => 'category_parent', 'orderby' => 'name', 'selected' => $category->parent, 'hierarchical' => true, 'show_option_none' => __('None')));?>
-                                    <?php the_content(); ?>
+
+                                    <?php
+                                    $categories = get_categories([
+                                        'taxonomy' => 'category',
+                                        'type' => 'post',
+                                        'child_of' => 0,
+                                        'orderby' => 'count',
+                                        'parent' => '',
+
+                                    ]);
+                                    foreach ($categories as $cat) {
+                                        if ($categories && $cat->parent===0 && $cat->term_id!==31) {
+                                            echo '<div class="sub_cat">';
+
+                                                 echo '<p class="sub_cat_p">'.$cat->name.' </p><div style="border: 1px solid #E5E5E5;"></div>
+';
+
+                                            $sub_cats = get_categories(array(
+                                                'child_of' => $cat->cat_ID
+                                            ));
+                                            echo'<div class="flex">';
+                                                foreach ($sub_cats as $sub_cat_key) {
+                                                    echo '<div class="test_sub_cat"><p>' . $sub_cat_key->name . '</p>';
+                                                    # получаем записи из рубрики
+                                                    $myposts = get_posts(array(
+                                                        'numberposts' => -1,
+                                                        'category' => $sub_cat_key->cat_ID,
+                                                        'orderby' => 'post_date',
+                                                        'order' => 'DESC',
+                                                    ));
+                                                    # выводим записи
+                                                    echo '<ul>';
+                                                    global $post;
+                                                    foreach ($myposts as $post) {
+                                                        setup_postdata($post);
+                                                        echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+                                                    }
+                                                    wp_reset_postdata(); // сбрасываем глобальную переменную пост
+                                                    echo '</ul>';
+                                                    echo '</div>';
+                                                }
+                                            echo'</div>';
 
 
-                                <?php endwhile; else: ?>
 
-                                    <h3><?php _e('Страница не найдена!', ET_DOMAIN) ?></h3>
 
-                                <?php endif; ?>
-
+                                            echo '</div>';
+                                        }
+                                    } ?>
                             </div>
                         </div>
 
