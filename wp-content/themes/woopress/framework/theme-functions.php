@@ -5082,19 +5082,19 @@ if(!function_exists('vc_icon_form_field')) {
 }
 
         function randomPosts() {
-        query_posts('orderby=rand&showposts=3');
+        query_posts('orderby=rand&showposts=4');
         ?>
                 <div class="recommmend-post">
                     <?php
                     if (have_posts()) : while (have_posts()) : the_post(); ?>
                         <div class="post">
-                            <?php echo '<a href="'. get_permalink().'">'?>
-                            <div class="img-recommend-post" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+                            <?php echo '<a href="' . get_permalink() . '">' ?>
+                            <div class="img-recommend-post"
+                                 style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
                                 <!--                                --><?php //the_post_thumbnail(); ?>
                             </div>
-                            <?php echo '<h5>'. get_the_title().'</h5>';
-                            the_excerpt();?>
-                            </a>
+                            <?php echo '<h5>' . get_the_title() . '</h5>';
+                            the_excerpt(); ?>
                         </div>
                     <?php endwhile; endif;
                     ?>

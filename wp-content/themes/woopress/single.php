@@ -188,12 +188,11 @@ $slider_id = rand(100, 10000);
                                     <?php endwhile; ?>
                                 <?php }?>
                             <?php endif; ?>
-                            
+
                         </ul>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 <?php
