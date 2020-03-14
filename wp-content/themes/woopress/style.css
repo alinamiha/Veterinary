@@ -3967,7 +3967,7 @@ select.full-filter {
 /*=========================================*/
 .page-content {
   margin-top: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 /*Revolution Slider / #slider */
 .page-heading-slider .wpb_revslider_element {
@@ -7920,7 +7920,6 @@ article.post h2 {
 }
 #commentform .form-submit {
   text-align: right;
-  margin-bottom: 40px;
 }
 #commentform .form-submit input[type="submit"] {
   background: none;
@@ -10681,7 +10680,6 @@ table.variations tr.shipping td {
   line-height: 56px;
 }
 .blog-post {
-  margin: 0 0 60px;
   padding: 0;
   list-style: none;
   float: left;
@@ -19227,7 +19225,6 @@ position: absolute;
   margin-top: 34px;
   display: flex;
   justify-content: space-between;
-  max-width: 825px;
 }
 .recommmend-post .post img{
   width: 255px;
@@ -19539,6 +19536,12 @@ a{
   background: #48ACFF;
   border-radius: 58px;
   float: right;
+}
+.consulting:last-of-type{
+  margin-right: 10px;
+}
+.consulting:visited{
+  color: #FFFFFF;
 }
 .consulting:hover{
 text-decoration: underline;
@@ -20005,6 +20008,9 @@ figure.wp-block-image.is-resized{
   .main-page-container .sidebar-right{
     display: none;
   }
+  .recommmend-post{
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -20082,23 +20088,6 @@ figure.wp-block-image.is-resized{
   }
 
 }
-@media only screen and (max-width: 855px) and (min-width: 680px){
-  .recommmend-post{
-    flex-direction: column;
-  }
-  .recommmend-post .flex,.recommmend-post .post {
-    /*margin: 0 auto;*/
-  }
-  .recommmend-post .post:first-child{
-    /*margin-right: 100px;*/
-  }
-  .sidebar-right .block-doctor{
-    /*margin: 0 auto;*/
-  }
-}
-@media only screen and (max-width: 825px){
-
-}
 @media only screen and (max-width: 790px){
   .main-footer-1 .container .row{
     display: block;
@@ -20155,9 +20144,6 @@ figure.wp-block-image.is-resized{
   .first-block .field{
     justify-content: center;
     margin-right: 0;
-  }
-  .recommmend-post{
-    flex-direction: column;
   }
   .recommmend-post>div{
     flex-direction: column;

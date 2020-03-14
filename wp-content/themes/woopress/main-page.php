@@ -91,25 +91,19 @@
 
                 </div>
             </div>
-            <h4 >Рекомендованые статьи</h4>
-            <div style="border: 1px solid #E5E5E5;"></div>
-            <?php kama_get_most_viewed("num=1"); ?>
-            <?php randomPosts(); ?>
-            <div class="popular-post">
-            <?php the_widget('Popular_Post')?>
-            </div>
+
+
         </div>
         <div class="sidebar-right">
-            <!--            <a href=""><div class="feed-world"></div></a>-->
-            <!--            <a href=""><div class="consultation-online"></div></a>-->
             <img src="/wp-content/themes/woopress/images/main-img/right-sidebar.svg" alt="shop">
             <div class="block-doctor">
                 <p>Проконсультируйся у нашего специалиста </p>
                 <a href="http://www.veterinary.wiki/category/%d0%bd%d0%b0%d1%88%d0%b8-%d0%b2%d1%80%d0%b0%d1%87%d0%b8/">Консультация ></a>
             </div>
-
         </div>
-        <!--       --><?php //the_widget( 'WP_Widget_Tag_Cloud', 'title=Облако рубрик&taxonomy=category', 'before_title=<h3 class="dad">&after_title=</h3>' );?>
 
     </div>
+    <h4 >Рекомендованые статьи</h4>
+    <div style="border: 1px solid #E5E5E5;"></div>
+    <?php randomPosts(); ?>
 </div >

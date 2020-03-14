@@ -12,6 +12,15 @@
 
 	<link rel="shortcut icon" href="<?php echo et_get_favicon(); ?>" />
 	<title><?php wp_title( '|', true, 'right' );?></title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160172452-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160172452-1');
+    </script>
 		<?php
 			if ( is_singular() && get_option( 'thread_comments' ) )
 				wp_enqueue_script( 'comment-reply' );

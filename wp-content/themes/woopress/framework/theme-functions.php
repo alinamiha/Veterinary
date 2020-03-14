@@ -5093,8 +5093,9 @@ if(!function_exists('vc_icon_form_field')) {
                                  style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
                                 <!--                                --><?php //the_post_thumbnail(); ?>
                             </div>
-                            <?php echo '<h5>' . get_the_title() . '</h5>';
-                            the_excerpt(); ?>
+                            <?php echo '<h5>'. get_the_title().'</h5>';
+                            the_excerpt();?>
+                            </a>
                         </div>
                     <?php endwhile; endif;
                     ?>
