@@ -7729,7 +7729,7 @@ article.post h2 {
   float: left;
   width: 100%;
   position: relative;
-  margin-top: 171px;
+  margin-top: 141px;
 }
 
 .related-posts .title {
@@ -7742,7 +7742,7 @@ article.post h2 {
   border: none;
   text-align: left;
 }
-.related-posts .title span {
+.related-posts .title span,.related-posts h3 {
   padding: 0 6px 0 0;
   background: #fff;
   position: relative;
@@ -19541,6 +19541,7 @@ a{
   background: #48ACFF;
   border-radius: 58px;
   float: right;
+  height: 40px;
 }
 .consulting:last-of-type{
   margin-right: 10px;
@@ -19955,6 +19956,15 @@ figure.wp-block-image.is-resized{
 .directory-page{
   margin-bottom: 40px;
 }
+.block-info{
+  display: flex;
+  justify-content: space-between;
+}
+.block-info p{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+}
 @media only screen and (min-width: 1145px){
   .container,.main-footer .container{
     width: 1170px;
@@ -20068,6 +20078,18 @@ figure.wp-block-image.is-resized{
     margin: 0 auto;
   }
 }
+@media screen and (max-width:975px){
+  .block-info{
+    flex-direction: column;
+    display: flex;
+  }
+  .block-tel{
+    display: flex;
+  }
+  .block-tel a:first-child{
+    margin-right: 10px;
+  }
+}
 @media screen and (max-width: 904px){
   .block-footer-sidebar{
     flex-direction: column;
@@ -20097,6 +20119,7 @@ figure.wp-block-image.is-resized{
   }
 
 }
+
 @media only screen and (max-width: 790px){
   .main-footer-1 .container .row{
     display: block;

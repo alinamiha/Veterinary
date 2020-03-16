@@ -55,6 +55,7 @@ $slider_id = rand(100, 10000);
 
                                 <?php the_content(); ?>
 
+
                             <?php elseif ($post_format == 'gallery'): ?>
                                 <?php if (count($attach_ids) > 0): ?>
                                 <div class="post-gallery-slider slider_id-<?php echo $slider_id; ?>">
@@ -129,7 +130,23 @@ $slider_id = rand(100, 10000);
                             <?php if (etheme_get_option('posts_links')): ?>
                                 <?php etheme_project_links(array()); ?>
                             <?php endif; ?>
+                            <?php
+                            $thisCat = get_the_category();
+if($thisCat[0]->cat_ID){
+//    echo 'aaa';
+    ?>
+    <div class="block-info">
+        <p class="location">Заказать консультацию можно в г. Одесса, Украина</p>
+        <div class="block-tel">
+            <a class="consulting" href="tel:+380679941991">+380679941991</a>
+            <a class="consulting" href="tel:+380677761351">+380677761351</a>
+        </div>
+    </div>
+    <?
+}
 
+//                            var_dump($thisCat);
+                            ?>
                             <div class="block-footer-post">
                                 <div class="block-features">
                                     <?php // Display Comments
@@ -174,22 +191,129 @@ $slider_id = rand(100, 10000);
                 </div>
                 <div class="col-md-3 col-md-pull-9 sidebar sidebar-left">
                     <div class="sidebar-widget widget_categories">
-                        <ul>
-                            <?php if (have_posts()):?>
-                                <?php foreach (get_the_category() as $category) {
-                                    while (have_posts()) : the_post(); ?>
-                                        <li class="side-li"><?php echo $category->name; ?></li>
-                                        <div style="border: 1px solid #E5E5E5;"></div>
-                                        <ul class="side-ul">
-                                            <li>
-                                                <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-                                            </li>
-                                        </ul>
-                                    <?php endwhile; ?>
-                                <?php }?>
-                            <?php endif; ?>
 
-                        </ul>
+
+
+
+
+
+
+
+
+<!--                        --><?php
+//
+//
+//
+//
+//                        $categories = get_categories([
+//                                        'taxonomy' => 'category',
+//                                        'type' => 'post',
+//                                        'child_of' => 0,
+//                                        'orderby' => 'count',
+//                                        'parent' => '',
+//
+//                                    ]);
+//                                    foreach ($categories as $cat) {
+//                                        if ($categories && $cat->parent===0 && $cat->term_id!==31) {
+////                                            echo '<div class="sub_cat">';
+////
+////                                                 echo '<p class="sub_cat_p">'.$cat->name.' </p><div style="border: 1px solid #E5E5E5;"></div>
+////';
+////
+////                                            $sub_cats = get_categories(array(
+////                                                'child_of' => $cat->cat_ID
+////                                            ));
+////                                            echo'<div class="flex">';
+////                                                foreach ($sub_cats as $sub_cat_key) {
+////                                                    echo '<div class="test_sub_cat"><p>' . $sub_cat_key->name . '</p>';
+////                                                    # получаем записи из рубрики
+////                                                    $myposts = get_posts(array(
+////                                                        'numberposts' => -1,
+////                                                        'category' => $sub_cat_key->cat_ID,
+////                                                        'orderby' => 'post_date',
+////                                                        'order' => 'DESC',
+////                                                    ));
+////                                                    # выводим записи
+////                                                    echo '<ul>';
+////                                                    global $post;
+////                                                    foreach ($myposts as $post) {
+////                                                        setup_postdata($post);
+////                                                        echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+////                                                    }
+////                                                    wp_reset_postdata(); // сбрасываем глобальную переменную пост
+////                                                    echo '</ul>';
+////                                                    echo '</div>';
+////                                                }
+////                                            echo'</div>';
+////
+////
+////
+////
+////                                            echo '</div>';
+////                                            var_dump($cat);
+//
+//                                        }
+//                                    } ?>
+
+
+
+
+                        <?php
+                        $allCat = get_categories();
+                        if (have_posts()):
+                            foreach (get_the_category() as $category) {
+                                foreach ($allCat as $catKey) {
+                                    if ($catKey->category_parent == $category->parent) {
+                                        foreach ($catKey as $sub_cat_key) {
+                                            echo '<div class="test_sub_cat"><p>' . $sub_cat_key->name . '</p>';
+                                            # получаем записи из рубрики
+                                            $myposts = get_posts(array(
+                                                'numberposts' => -1,
+                                                'category' => $sub_cat_key->cat_ID,
+                                                'orderby' => 'post_date',
+                                                'order' => 'DESC',
+                                            ));
+                                            # выводим записи
+                                            echo '<ul>';
+                                            global $post;
+                                            foreach ($myposts as $post) {
+                                                setup_postdata($post);
+//                                                echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+                                            }
+                                            wp_reset_postdata(); // сбрасываем глобальную переменную пост
+                                            echo '</ul>';
+                                            echo '</div>';
+                                        }
+                                    }
+                                }
+                            }
+                        endif; ?>
+
+
+
+
+
+
+
+
+
+<!--                        <ul>-->
+<!--                            --><?php //if (have_posts()):?>
+<!--                                --><?php //foreach (get_the_category() as $category) {
+//                                    while (have_posts()) : the_post(); ?>
+<!--                                        <li class="side-li">--><?php //echo $category->name; ?><!--</li>-->
+<!--                                        <div style="border: 1px solid #E5E5E5;"></div>-->
+<!--                                        <ul class="side-ul">-->
+<!--                                            <li>-->
+<!--                                                <a href="--><?php //the_permalink() ?><!--">--><?php //the_title() ?><!--</a>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    --><?php //endwhile; ?>
+<!--                                --><?php //}?>
+<!--                            --><?php //endif; ?>
+<!---->
+<!--                        </ul>-->
+
                     </div>
                 </div>
             </div>

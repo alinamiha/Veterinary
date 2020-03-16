@@ -35,9 +35,10 @@
                             <?php
                             $thisCat = get_category(get_query_var('cat'), false);
                             $categories = get_categories(array(
-                                'orderby' => 'name',
+                                'orderby' => 'ID',
                                 'parent' => $thisCat->term_taxonomy_id
                             ));
+
                             if ($categories) {
                                 foreach ($categories as $category) {
 
@@ -46,8 +47,8 @@
                                     $myposts = get_posts(array(
                                         'numberposts' => -1,
                                         'category' => $category->cat_ID,
-                                        'orderby' => 'post_date',
-                                        'order' => 'DESC',
+                                        'orderby' => 'ID',
+                                        'order' => 'DESC ',
                                     ));
                                     # выводим записи
                                     echo '<ul>';
@@ -63,12 +64,24 @@
                             } else {
 
                                 ?>
-                                <?php $posts = get_posts("category=$thisCat->cat_ID&numberposts=$post->ID"); ?>
+                                <?php $posts = get_posts("category=$thisCat->cat_ID&numberposts=$post->ID&order=ASC"); ?>
                                 <?php if ($posts) : ?>
 
                                     <?php foreach ($posts as $post) : setup_postdata($post); ?>
+                                    <?php
+                                    if($thisCat->cat_ID==31){?>
+                                        <a class="link-alone" href="<?php the_permalink() ?>">
+
+                                        <div class="img-recommend-post"
+                                                 style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+                                            </div>
+                                        <p class="link-alone""><?php the_title(); ?></p>
+                                        </a>
+                                    <?php }else{
+                                        ?>
 
                                         <a class="link-alone" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                        <? }?>
                                     <?php endforeach; ?>
                                 <?php endif;
 
@@ -86,7 +99,7 @@
                                 <?php endwhile; ?>
                             <?php else: ?>
 
-                                <h1><?php _e('No posts were found!', ET_DOMAIN) ?></h1>
+                                <h1><?php _e('Посты не найдены', ET_DOMAIN) ?></h1>
 
                             <?php endif;
                         }
@@ -94,12 +107,53 @@
 
                     </div>
 
-                    <?php if (etheme_get_option('post_related')): ?>
-                        <div class="related-posts">
-                            <?php et_get_related_posts();?>
+                    <div class="related-posts">
+
+                        <?php
+                        //for use in the loop, list 5 post titles related to first tag on current post
+                        $tags = wp_get_post_tags($post->ID);
+                        if ($tags) { ?>
+
+
+
+                            <?php
+                            $first_tag = $tags[0]->term_id;
+                            $args = array(
+                                'tag__in' => array($first_tag),
+                                'post__not_in' => array($post->ID),
+                                'posts_per_page' => 4,
+                                'caller_get_posts' => 1
+                            );
+                            $my_query = new WP_Query($args);
+                            if ($my_query->have_posts()) {
+                                ?>
+                        <h3>Рекомендованые статьи</h3>
+                        <div style="border: 1px solid #E5E5E5;"></div>
+                        <div class="recommmend-post">
+                                <?php
+                                while ($my_query->have_posts()) : $my_query->the_post();
+                                    $imgThumID = get_the_post_thumbnail($id);
+                                    ?>
+                                    <div class="post">
+                                        <a href="<?php the_permalink() ?>">
+                                            <div class="img-recommend-post"
+                                                 style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+                                            </div>
+                                            <h5><?php the_title(); ?></h5>
+                                            <?php the_excerpt(); ?>
+                                        </a>
+
+                                    </div>
+                                <?php
+                                endwhile;
+                            }
+                            wp_reset_query();
+                            }
+                            ?>
                         </div>
-                    <?php endif; ?>
-				</div>
+                    </div>
+
+                </div>
 
 			</div>
 

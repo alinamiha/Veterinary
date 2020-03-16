@@ -3255,7 +3255,7 @@ if(!function_exists('etheme_breadcrumbs')) {
           echo $before . 'Статьи автора ' . $userdata->display_name . $after;
 
         } elseif ( is_404() ) {
-          echo $before . 'Error 404' . $after;
+          echo $before . 'Ошибка 404' . $after;
         }else{
 
             echo $blogPage;
@@ -4760,7 +4760,7 @@ function etheme_print_tweets($consumer_key,$consumer_secret,$user_token,$user_se
 // **********************************************************************//
 
 if(!function_exists('et_get_related_posts')) {
-    function et_get_related_posts($postId = false, $limit = 4){
+    function et_get_related_posts($postId = false, $limit = 5){
         global $post;
         if(!$postId) {
             $postId = $post->ID;
@@ -5091,7 +5091,6 @@ if(!function_exists('vc_icon_form_field')) {
                             <?php echo '<a href="' . get_permalink() . '">' ?>
                             <div class="img-recommend-post"
                                  style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
-                                <!--                                --><?php //the_post_thumbnail(); ?>
                             </div>
                             <?php echo '<h5>'. get_the_title().'</h5>';
                             the_excerpt();?>
