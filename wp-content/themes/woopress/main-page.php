@@ -1,4 +1,4 @@
-<div class="container content-page main-page-container">
+<div class="content-page main-page-container">
 
 
     <div class="first-block">
@@ -22,11 +22,11 @@
                 <p class="post-link">Статьи ></p>
             </a>
             <div class="block-animals">
-                <a href="http://www.veterinary.wiki/category/parrots/" id="birds">
+                <a href="https://www.veterinary.wiki/category/birds/" id="birds">
                     <h4>Птицы</h4>
                     <p class="post-link">Статьи ></p>
                 </a>
-                <a href="http://www.veterinary.wiki/category/turtles/" id="exotics">
+                <a href="https://www.veterinary.wiki/category/exotic/" id="exotics">
                     <h4>Экзотика</h4>
                     <p class="post-link">Статьи ></p>
                 </a>

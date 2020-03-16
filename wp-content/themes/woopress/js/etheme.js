@@ -2125,7 +2125,7 @@ jQuery('.all-cat-ill').on('click', function () {
 })
 jQuery('.side-li').on('click', function () {
     jQuery('.side-ul').slideToggle();
-    jQuery('.all-cat-ill').toggleClass('rotate-side');
+    jQuery('.side-li').toggleClass('rotate-side');
 })
 
 

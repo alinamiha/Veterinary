@@ -7412,7 +7412,7 @@ article.post h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 155%;
   color: #000000;
 }
@@ -7998,7 +7998,7 @@ article.post h2 {
 }
 .widget_categories li {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   width: 100%;
 }
 .widget_categories li.lastItem {
@@ -10697,10 +10697,11 @@ table.variations tr.shipping td {
 }
 .blog-post .content-article li {
   list-style: inherit;
+  font-size: 15px;
 }
 .blog-post .content-article ul,
 .blog-post .content-article ol {
-  /*padding-left: 20px;*/
+  padding-left: 20px;
 }
 .blog-post ul ul {
   padding-left: 20px;
@@ -13275,7 +13276,7 @@ blockquote.testimonials-text:after {
   letter-spacing: 1px;
 }
 .main-footer p {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   margin-bottom: 0;
   font: 12px/18px 'Raleway', Arial, Helvetica, sans-serif;
   color: #C4C4C4;
@@ -18891,6 +18892,9 @@ position: absolute;
 .type-of-animals .block-animals .new-type:hover h4{
   color: #ffffff;
 }
+.type-of-animals .block-animals .new-type:focus{
+  text-decoration: none;
+}
 .type-of-animals p.post-link{
   font-family: Roboto;
   font-style: normal;
@@ -19388,6 +19392,7 @@ p.cop-text{
   margin-top: 40px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 .widget-container .textwidget{
   flex-direction: row;
@@ -19737,6 +19742,10 @@ input[type="search"].validation-failed{
 .block-with-post .test_sub_cat ul{
   margin-top: 10px;
 }
+.block-with-post{
+  display: flex;
+  flex-direction: column;
+}
 
 .directory-container .entry-title a:hover,.link-alone:hover{
   color: #5E5E5E;
@@ -19903,12 +19912,12 @@ figure.wp-block-image.is-resized{
   font-size: 12px;
   line-height: 14px;
   color: #979797;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .block-footer-sidebar{
   display: flex;
 }
-.side-li:after{
+.side-li::after{
   content: url("/wp-content/themes/woopress/images/main-img/arrow-2.svg");
   margin-left: 10px;
   transform: rotate(0deg);
@@ -19926,14 +19935,14 @@ figure.wp-block-image.is-resized{
 .side-ul{
   margin-top: 7px;
 }
-.rotate-side{
+.side-li.rotate-side::after{
   transform: rotate(270deg);
 }
 .side-ul li a{
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 186%;
   color: #2C2C2C;
 }

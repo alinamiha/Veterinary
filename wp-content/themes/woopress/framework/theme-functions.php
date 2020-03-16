@@ -4760,7 +4760,7 @@ function etheme_print_tweets($consumer_key,$consumer_secret,$user_token,$user_se
 // **********************************************************************//
 
 if(!function_exists('et_get_related_posts')) {
-    function et_get_related_posts($postId = false, $limit = 5){
+    function et_get_related_posts($postId = false, $limit = 4){
         global $post;
         if(!$postId) {
             $postId = $post->ID;
