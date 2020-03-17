@@ -78,101 +78,24 @@ if (!function_exists('etheme_footer_demo')) {
                                 'taxonomy' => 'category',
                                 'type' => 'post',
                                 'child_of' => 0,
-                                'orderby' => 'count',
+                                'orderby' => 'sort',
                                 'parent' => '',
 
                             ]);
                             echo '<ul class="footer-cat">';
 
                             foreach ($categories as $cat) {
-                                if ($categories && $cat->parent===0 && $cat->term_id!==31) {
+                                if ($categories && $cat->parent === 0 && $cat->term_id !== 31) {
 
-                                    echo '<li class=""><a href="http://www.veterinary.wiki/category/'.$cat->slug.'">'.$cat->name.' </a></li>';
-
+                                    echo '<li class=""><a href="http://www.veterinary.wiki/category/' . $cat->slug . '">' . $cat->name . ' </a></li>';
 
                                 }
-
-
                             }
                             echo '</ul>';
                             ?>
                         </div>
                         <p class="cop-text">Все права защищены Veterinary Wiki 2020</p>
-
                     </div>
-
-<!--                        <address class="address-company">30 South Avenue San Francisco<br>-->
-<!--                            <span class="white-text">Phone</span>: +78 123 456 789<br>-->
-<!--                            <span class="white-text">Email</span>: <a href="mailto:Support@woopress.com">Support@woopress.com</a><br>-->
-<!--                            <a class="white-text letter-offset" href="#">www.woopress.com</a><br>-->
-<!--                            --><?php //echo etheme_share_shortcode(array()); ?>
-<!--                        </address>-->
-                    </div>
-<!--                        <div class="col-md-3">-->
-<!--                            <div class="widget-container widget_text">-->
-<!--                                <div class="textwidget pages-footer">-->
-<!--                                    <ul class="list-unstyled main-pages">-->
-<!--                                        <li><a href="#">Наши врачи </a></li>-->
-<!--                                        <li><a href="#">Блог</a></li>-->
-<!--                                        <li><a href="#">Отзывы</a></li>-->
-<!--                                        <li><a href="#">Еще страница</a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3">-->
-<!--                            <div class="widget-container widget_text">-->
-<!--                                <h5>Каталог заболеваний</h5>-->
-<!---->
-<!--                                <div class="textwidget">-->
-<!--                                    <ul class="list-unstyled categories-main">-->
-<!---->
-<!--                                        <li><a href="#">Болезни кошек</a></li>-->
-<!--                                        <li><a href="#">Болезни собак</a></li>-->
-<!--                                        <li><a href="#">Болезни птиц</a></li>-->
-<!--                                        <li><a href="#">Болезни хорьков</a></li>-->
-<!--                                    </ul>-->
-<!---->
-<!--                                    <ul class="list-unstyled categories-main">-->
-<!--                                        <li><a href="#">Болезни кошек</a></li>-->
-<!--                                        <li><a href="#">Болезни собак</a></li>-->
-<!--                                        <li><a href="#">Болезни птиц</a></li>-->
-<!--                                        <li><a href="#">Болезни хорьков</a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-3">-->
-<!--                            <div class="textwidget privacy-link">-->
-<!--                                <a href="#">Пользовательское соглашение</a>-->
-<!--                                <a href="#">Политика конфиденциальности</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    <div class="col-md-3">-->
-<!--                        --><?php
-//                        $args = array(
-//                            'widget_id' => 'etheme_widget_flickr',
-//                            'before_widget' => '<div class="footer-sidebar-widget etheme_widget_flickr">',
-//                            'after_widget' => '</div><!-- //sidebar-widget -->',
-//                            'before_title' => '<h4 class="widget-title"><span>',
-//                            'after_title' => '</span></h4>'
-//                        );
-//
-//                        $instance = array(
-//                            'screen_name' => '52617155@N08',
-//                            'number' => 6,
-//                            'show_button' => 1,
-//                            'title' => __('Flickr Photos', ETHEME_DOMAIN)
-//                        );
-//
-//
-//                        $widget = new Etheme_Flickr_Widget();
-//                        $widget->widget($args, $instance);
-//                        ?>
-<!--                    </div>-->
-<!--                    <div class="col-md-3">-->
-<!--                        --><?php //the_widget('Etheme_Recent_Posts_Widget', array('title' => __('Recent posts', ETHEME_DOMAIN), 'number' => 2), array('before_title' => '<h3 class="widget-title">', 'after_title' => '</h3>', 'number' => 2)); ?>
-<!--                    </div>-->
                 </div>
 
                 <?php

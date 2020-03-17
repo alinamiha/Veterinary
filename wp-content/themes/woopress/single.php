@@ -132,7 +132,7 @@ $slider_id = rand(100, 10000);
                             <?php endif; ?>
                             <?php
                             $thisCat = get_the_category();
-                            if ($thisCat[0]->cat_ID) {
+                            if ($thisCat[0]->cat_ID==31) {
                                 ?>
                                 <div class="block-info">
                                     <p class="location">Заказать консультацию можно в г. Одесса, Украина</p>
@@ -160,9 +160,6 @@ $slider_id = rand(100, 10000);
                                 <h4 class="title-alt"><span><?php _e('About Author', ETHEME_DOMAIN); ?></span></h4>
 
                                 <div class="author-info vcard">
-                                    <a class="pull-left" href="#">
-                                        <?php echo get_avatar(get_the_author_meta('email'), 90); ?>
-                                    </a>
                                     <div class="media-body">
                                         <h4 class="media-heading url"><?php the_author_link(); ?></h4>
                                         <p class="note"><?php echo get_the_author_meta('description'); ?></p>

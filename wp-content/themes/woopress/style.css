@@ -249,6 +249,7 @@ body {
   height: auto !important;
   -ms-overflow-x: hidden !important;
   overflow-x: hidden !important;
+  min-height: 100vh;
 }
 a {
   text-decoration: none;
@@ -18657,15 +18658,6 @@ ul .with-tooltip:nth-child(7) {
   border-width: 2px !important;
   border-style: solid;
 }
-
-
-
-
-
-
-
-
-
 .bg-head::before{
 content: "";
   position: absolute;
@@ -18848,7 +18840,6 @@ position: absolute;
 
 .type-of-animals .big-img, .type-of-animals .block-animals{
   width: 270px;
-  /*height: 433px;*/
 }
 .type-of-animals .block-animals{
   margin-right: 10px;
@@ -19144,7 +19135,6 @@ position: absolute;
 
 }
 .sidebar-left-column{
-  /*max-width: 825px;*/
   width: 100%;
   margin-top: 153px;
 }
@@ -19157,7 +19147,6 @@ position: absolute;
   color: #C4C4C4;
 }
 .recent-added-post{
-  /*display: inline-flex;*/
   margin-top: 17px;
   margin-bottom: 100px;
 }
@@ -19282,7 +19271,6 @@ position: absolute;
 .sidebar-right{
   margin-top: 153px;
   margin-left: 30px;
-  /*display: none;*/
 }
 .block-doctor {
   height: 331px;
@@ -19323,9 +19311,6 @@ position: absolute;
 .fixed-header-area{
   display: none;
 }
-.page-content.sidebar-position-left{
-  /*display: none;*/
-}
 .copyright{
   display: none;
 }
@@ -19334,30 +19319,13 @@ position: absolute;
   display: flex;
 }
 .main-footer-1 .container .row .col-md-3:first-child{
-  /*max-width: 188px;*/
-  /*margin-right: 110px;*/
   width: 100%;
 }
-/*.feed-world{*/
-  /*background-image: url("/wp-content/themes/woopress/images/main-img/right-sidebar.svg");*/
-  /*width: 270px;*/
-  /*height: 404px;*/
-/*}*/
-/*.consultation-online{*/
-  /*background-image: url("/wp-content/themes/woopress/images/main-img/doctor.svg");*/
-  /*width: 255px;*/
-  /*height: 331px;*/
-/*}*/
-/*.main-footer-1 .container .row .flex .col-md-3:first-child{*/
-  /*max-width: 100%;*/
-  /*margin-right: 0;*/
-/*}*/
+
 .main-footer-1 .container .row .col-md-3:nth-child(3) .widget-container .textwidget{
   margin-top: 0;
 }
-.main-footer-1 .container .row {
-  /*justify-content: space-between;*/
-}
+
 .main-footer-1 .container .row .col-md-3{
   margin-top: 20px;
   margin-bottom: 30px;
@@ -19544,7 +19512,6 @@ a{
   background: #48ACFF;
   border-radius: 58px;
   float: right;
-  /*height: 40px;*/
 }
 .consulting:last-of-type{
   margin-right: 10px;
@@ -19574,8 +19541,7 @@ text-decoration: underline;
 }
 .share-post,.project-navigation,.title-alt,.author-info,
 .form-group .control-label, .form-group #url,.widget-title,
-.logged-in-as, .widget-title,.sidebar.col-md-3 .widget-title,
-.media .pull-left{
+.logged-in-as, .widget-title,.sidebar.col-md-3 .widget-title{
   display: none;
 }
 .block-footer-post{
