@@ -187,22 +187,28 @@ $slider_id = rand(100, 10000);
                         <?php
                         $cats = get_the_category();
                         $catID = $cats[0]->cat_ID;
-
-                        $posts = get_posts(array(
-                            'posts_per_page' => 5,
-                            'category' => $catID,
+                        $sub_cats = get_categories(array(
+                            'child_of' => $cats[0]->category_parent
                         ));
-                        ?>
-
-                        <h4 class="side-li"><?php echo $cats[0]->name; ?></h4>
+                        foreach ($sub_cats as $cat) {
+//                            var_dump($cat->cat_ID) ;
+                            $posts = get_posts(array(
+                                'posts_per_page' => 5,
+                                'category' => $cat->cat_ID,
+                            ));
+                            ?>
+                        <h4 class="side-li"><?php echo $cat->name; ?></h4>
                         <div style="border: 1px solid #E5E5E5;"></div>
                         <ul class="side-ul">
+
                             <?php foreach ($posts as $post): ?>
                                 <li>
                                     <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
                                 </li>
-                            <?php endforeach; ?>
+                            <?php endforeach;
 
+                        }
+                        ?>
                         </ul>
 
                     </div>

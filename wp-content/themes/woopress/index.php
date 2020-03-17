@@ -65,20 +65,22 @@
                                 <?php if ($posts) : ?>
 
                                     <?php foreach ($posts as $post) : setup_postdata($post); ?>
-                                    <?php
-                                    if($thisCat->cat_ID==31){?>
-                                        <a class="link-alone" href="<?php the_permalink() ?>">
+                                        <?php
+                                        if ($thisCat->cat_ID == 31) {
+                                            ?>
+                                            <a class="link-alone" href="<?php the_permalink() ?>">
 
-                                        <div class="img-recommend-post"
-                                                 style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
-                                            </div>
-                                        <p class="link-alone""><?php the_title(); ?></p>
-                                        </a>
-                                    <?php }else{
-                                        ?>
+                                                <div class="img-recommend-post"
+                                                     style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+                                                </div>
+                                                <p class="link-alone""><?php the_title(); ?></p>
+                                            </a>
+                                        <?php } else {
+                                            ?>
 
-                                        <a class="link-alone" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-                                        <? }?>
+                                            <a class="link-alone"
+                                               href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                        <? } ?>
                                     <?php endforeach; ?>
                                 <?php endif;
 
@@ -106,53 +108,53 @@
                     </div>
 
 
+                    <?php
+                    //for use in the loop, list 5 post titles related to first tag on current post
+
+                    $tags = wp_get_post_tags($post->ID);
+                    if ($tags) { ?>
                         <?php
-                        //for use in the loop, list 5 post titles related to first tag on current post
+                        $first_tag = $tags[1]->term_id;
+                        $args = array(
+                            'tag__in' => array($first_tag),
+                            'post__not_in' => array($post->ID),
+                            'posts_per_page' => 4,
+                            'caller_get_posts' => 1
+                        );
 
-                        $tags = wp_get_post_tags($post->ID);
-                        if ($tags) { ?>
-                            <?php
-                            $first_tag = $tags[1]->term_id;
-                            $args = array(
-                                'tag__in' => array($first_tag),
-                                'post__not_in' => array($post->ID),
-                                'posts_per_page' => 4,
-                                'caller_get_posts' => 1
-                            );
-
-                            $my_query = new WP_Query($args);
-                            if ($my_query->have_posts()) {
-                                ?>
-                    <div class="related-posts">
-                    <h3>Рекомендованые статьи</h3>
-                        <div style="border: 1px solid #E5E5E5;"></div>
-                        <div class="recommmend-post">
-                                <?php
-                                while ($my_query->have_posts()) : $my_query->the_post();
-                                    $imgThumID = get_the_post_thumbnail($id);
-                                    ?>
-                                    <div class="post">
-                                        <a href="<?php the_permalink() ?>">
-                                            <div class="img-recommend-post"
-                                                 style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
-                                            </div>
-                                            <h5><?php the_title(); ?></h5>
-                                            <?php the_excerpt(); ?>
-                                        </a>
-
-                                    </div>
-                                <?php
-                                endwhile;
-                                ?>
-                        </div>
-                    </div>
-
-                        <?php
-                            }
-                            wp_reset_query();
-
-                            }
+                        $my_query = new WP_Query($args);
+                        if ($my_query->have_posts()) {
                             ?>
+                            <div class="related-posts">
+                                <h3>Рекомендованые статьи</h3>
+                                <div style="border: 1px solid #E5E5E5;"></div>
+                                <div class="recommmend-post">
+                                    <?php
+                                    while ($my_query->have_posts()) : $my_query->the_post();
+                                        $imgThumID = get_the_post_thumbnail($id);
+                                        ?>
+                                        <div class="post">
+                                            <a href="<?php the_permalink() ?>">
+                                                <div class="img-recommend-post"
+                                                     style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+                                                </div>
+                                                <h5><?php the_title(); ?></h5>
+                                                <?php the_excerpt(); ?>
+                                            </a>
+
+                                        </div>
+                                    <?php
+                                    endwhile;
+                                    ?>
+                                </div>
+                            </div>
+
+                            <?php
+                        }
+                        wp_reset_query();
+
+                    }
+                    ?>
 
                 </div>
 

@@ -7,8 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d3df480e-be54-45b6-bf4b-193d6a40f437" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/style.css" afterDir="false" />
     </list>
     <ignored path="C:\Users\Admin\Desktop\Проекты\Veterinary\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +55,7 @@
           <entry key="html" value="1" />
           <entry key="js" value="6" />
           <entry key="less" value="2" />
-          <entry key="php" value="141" />
+          <entry key="php" value="142" />
           <entry key="po" value="1" />
           <entry key="svg" value="7" />
           <entry key="xml" value="1" />
@@ -68,28 +68,28 @@
           <entry key="JavaScript" value="6" />
           <entry key="Less" value="2" />
           <entry key="Locale" value="1" />
-          <entry key="PHP" value="141" />
+          <entry key="PHP" value="142" />
           <entry key="SVG" value="7" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="7513" />
+          <entry key="css" value="7515" />
           <entry key="js" value="744" />
           <entry key="less" value="2" />
-          <entry key="php" value="9551" />
+          <entry key="php" value="9735" />
           <entry key="svg" value="3" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="7513" />
+          <entry key="CSS" value="7515" />
           <entry key="HTML" value="44" />
           <entry key="JavaScript" value="744" />
           <entry key="Less" value="2" />
-          <entry key="PHP" value="9507" />
+          <entry key="PHP" value="9691" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SVG" value="3" />
         </counts>
@@ -107,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="251" column="20" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="20" />
+            <state relative-caret-position="180">
+              <caret line="19921" column="3" selection-start-line="19921" selection-start-column="3" selection-end-line="19921" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -143,11 +143,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/general-categories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="40" column="47" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="40" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+            <state relative-caret-position="1921">
+              <caret line="146" column="30" lean-forward="true" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="e#3204#3271#0#HTML" expanded="true" />
@@ -161,11 +173,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="134" column="53" selection-start-line="134" selection-start-column="53" selection-end-line="134" selection-end-column="53" />
+            <state relative-caret-position="243">
+              <caret line="211" column="29" selection-start-line="211" selection-start-column="29" selection-end-line="211" selection-end-column="29" />
               <folding>
-                <element signature="e#9511#9545#0#HTML" expanded="true" />
-                <marker date="1584455643447" expanded="true" signature="8583:9409" ph="..." />
+                <element signature="e#9271#9305#0#HTML" expanded="true" />
+                <marker date="1584462727314" expanded="true" signature="8583:9743" ph="..." />
               </folding>
             </state>
           </provider>
@@ -264,11 +276,11 @@
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/css/responsive.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/framework/theme-functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/js/etheme.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/woopress/style.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/woopress/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/framework/theme.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/woopress/single.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/woopress/style.css" />
       </list>
     </option>
   </component>
@@ -385,7 +397,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="459475000" />
+    <option name="totallyTimeSpent" value="460938000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -400,7 +412,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16868381" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16868381" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -410,7 +422,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32903227" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.11935484" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.11935484" />
       <window_info anchor="bottom" id="File Transfer" order="8" weight="0.19957082" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.32903227" />
@@ -749,13 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/general-categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/framework/theme-functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -784,28 +789,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="134" column="53" selection-start-line="134" selection-start-column="53" selection-end-line="134" selection-end-column="53" />
-          <folding>
-            <element signature="e#9511#9545#0#HTML" expanded="true" />
-            <marker date="1584455643447" expanded="true" signature="8583:9409" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/framework/theme.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="251" column="20" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -825,14 +812,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="1921">
+          <caret line="146" column="30" lean-forward="true" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="e#3204#3271#0#HTML" expanded="true" />
             <element signature="e#4933#4967#0#HTML" expanded="true" />
             <element signature="e#5373#5440#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/general-categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="40" column="47" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="40" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="211" column="29" selection-start-line="211" selection-start-column="29" selection-end-line="211" selection-end-column="29" />
+          <folding>
+            <element signature="e#9271#9305#0#HTML" expanded="true" />
+            <marker date="1584462727314" expanded="true" signature="8583:9743" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19921" column="3" selection-start-line="19921" selection-start-column="3" selection-end-line="19921" selection-end-column="3" />
         </state>
       </provider>
     </entry>

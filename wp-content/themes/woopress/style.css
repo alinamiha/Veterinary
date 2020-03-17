@@ -19918,7 +19918,7 @@ figure.wp-block-image.is-resized{
   text-decoration: underline;
 }
 .side-ul li a:visited{
-  color: #48ACFF;
+  /*color: #48ACFF;*/
 }
 .directory-page{
   margin-bottom: 40px;
