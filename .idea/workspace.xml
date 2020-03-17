@@ -6,12 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3df480e-be54-45b6-bf4b-193d6a40f437" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/framework/theme-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/framework/theme-functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/headers/header-structure-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/headers/header-structure-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/js/etheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/js/etheme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/main-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/main-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/woopress/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/woopress/style.css" afterDir="false" />
     </list>
     <ignored path="C:\Users\Admin\Desktop\Проекты\Veterinary\.idea\shelf/" />
@@ -55,11 +52,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="10" />
+          <entry key="css" value="11" />
           <entry key="html" value="1" />
           <entry key="js" value="7" />
           <entry key="less" value="2" />
-          <entry key="php" value="145" />
+          <entry key="php" value="151" />
           <entry key="po" value="1" />
           <entry key="svg" value="7" />
           <entry key="txt" value="1" />
@@ -68,12 +65,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="10" />
+          <entry key="CSS" value="11" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="7" />
           <entry key="Less" value="2" />
           <entry key="Locale" value="1" />
-          <entry key="PHP" value="145" />
+          <entry key="PHP" value="151" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SVG" value="7" />
           <entry key="XML" value="1" />
@@ -84,7 +81,7 @@
           <entry key="css" value="7547" />
           <entry key="js" value="877" />
           <entry key="less" value="2" />
-          <entry key="php" value="9861" />
+          <entry key="php" value="9889" />
           <entry key="svg" value="3" />
           <entry key="txt" value="1" />
         </counts>
@@ -95,7 +92,7 @@
           <entry key="HTML" value="44" />
           <entry key="JavaScript" value="877" />
           <entry key="Less" value="2" />
-          <entry key="PHP" value="9817" />
+          <entry key="PHP" value="9845" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SVG" value="3" />
         </counts>
@@ -105,28 +102,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="19923" column="13" selection-start-line="19923" selection-start-column="13" selection-end-line="19923" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
+            <state relative-caret-position="85">
               <caret line="5" column="161" selection-start-line="5" selection-start-column="161" selection-end-line="5" selection-end-column="161" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/single.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="777">
+              <caret line="214" column="63" lean-forward="true" selection-start-line="214" selection-start-column="63" selection-end-line="214" selection-end-column="63" />
+              <folding>
+                <element signature="e#9271#9305#0#HTML" expanded="true" />
+                <element signature="e#10081#10115#0#HTML" expanded="true" />
+                <marker date="1584467792396" expanded="true" signature="8583:10890" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,20 +142,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/js/etheme.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/main-header-img.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="2156" selection-start-line="2156" selection-end-line="2156" />
+            <state relative-caret-position="102">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/main-page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="100" column="74" selection-start-line="100" selection-start-column="74" selection-end-line="100" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/headers/header-structure-1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="76" column="57" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="57" />
+            <state relative-caret-position="351">
+              <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -164,23 +175,7 @@
             <state relative-caret-position="195">
               <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
               <folding>
-                <element signature="e#3204#3271#0#HTML" expanded="true" />
-                <element signature="e#4933#4967#0#HTML" expanded="true" />
-                <element signature="e#5373#5440#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/single.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="215" column="46" selection-start-line="215" selection-start-column="46" selection-end-line="215" selection-end-column="46" />
-              <folding>
-                <element signature="e#9271#9305#0#HTML" expanded="true" />
-                <element signature="e#10081#10115#0#HTML" expanded="true" />
-                <marker date="1584467792396" expanded="true" signature="8583:10890" ph="..." />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,7 +185,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>current</find>
       <find>'Ошибка 404'</find>
       <find>only screen and (max-width: 768px)</find>
       <find>.back-history</find>
@@ -220,6 +214,7 @@
       <find>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=</find>
       <find>jQuery</find>
       <find>.side-ul li a:visited</find>
+      <find>all-cat-ill</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -270,21 +265,21 @@
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/sidebar.php" />
         <option value="$PROJECT_DIR$/wp-includes/widgets/class-wp-widget-categories.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/category.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/woopress/page.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/woopress/main-page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/404.php" />
         <option value="$PROJECT_DIR$/wp-includes/taxonomy.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/woopress/headers/header-structure-1.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/general-categories.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/css/responsive.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/framework/theme.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/woopress/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/framework/theme-functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/woopress/js/etheme.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/woopress/page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/woopress/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/woopress/main-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/woopress/headers/header-structure-1.php" />
       </list>
     </option>
   </component>
@@ -401,7 +396,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467590000" />
+    <option name="totallyTimeSpent" value="469391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -498,13 +493,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/main-header-img.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
@@ -705,17 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/main-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-862">
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-          <folding>
-            <element signature="n#div#1;n#div#2;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/taxonomy.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -758,60 +735,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="215" column="46" selection-start-line="215" selection-start-column="46" selection-end-line="215" selection-end-column="46" />
-          <folding>
-            <element signature="e#9271#9305#0#HTML" expanded="true" />
-            <element signature="e#10081#10115#0#HTML" expanded="true" />
-            <marker date="1584467792396" expanded="true" signature="8583:10890" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/fonts/roboto/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
-          <folding>
-            <element signature="e#3204#3271#0#HTML" expanded="true" />
-            <element signature="e#4933#4967#0#HTML" expanded="true" />
-            <element signature="e#5373#5440#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="19923" column="13" selection-start-line="19923" selection-start-column="13" selection-end-line="19923" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/headers/header-structure-1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="76" column="57" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/general-categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="40" column="47" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="40" selection-end-column="47" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/feed-atom.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -831,6 +756,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/js/etheme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="2156" selection-start-line="2156" selection-end-line="2156" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -838,17 +770,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/general-categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="40" column="47" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="40" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/main-header-img.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="214" column="63" lean-forward="true" selection-start-line="214" selection-start-column="63" selection-end-line="214" selection-end-column="63" />
+          <folding>
+            <element signature="e#9271#9305#0#HTML" expanded="true" />
+            <element signature="e#10081#10115#0#HTML" expanded="true" />
+            <marker date="1584467792396" expanded="true" signature="8583:10890" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="252" column="1" lean-forward="true" selection-start-line="252" selection-start-column="1" selection-end-line="252" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
+        <state relative-caret-position="85">
           <caret line="5" column="161" selection-start-line="5" selection-start-column="161" selection-end-line="5" selection-end-column="161" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/js/etheme.js">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="2156" selection-start-line="2156" selection-end-line="2156" />
+        <state relative-caret-position="430">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/main-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="100" column="74" selection-start-line="100" selection-start-column="74" selection-end-line="100" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/woopress/headers/header-structure-1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
         </state>
       </provider>
     </entry>

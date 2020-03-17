@@ -249,7 +249,7 @@ body {
   height: auto !important;
   -ms-overflow-x: hidden !important;
   overflow-x: hidden !important;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }
 a {
   text-decoration: none;

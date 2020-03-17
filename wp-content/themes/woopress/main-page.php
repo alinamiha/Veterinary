@@ -3,21 +3,21 @@
 
     <div class="first-block">
         <div class="field">
-            <img src="/wp-content/themes/woopress/images/main-img/monitor.svg" alt="monitor">
+            <img src="/wp-content/themes/woopress/images/main-img/monitor.svg" alt="solutions">
             <p>Мгновенные решения</p>
         </div>
         <div class="field">
-            <img src="/wp-content/themes/woopress/images/main-img/glasses.svg" alt="glasses">
+            <img src="/wp-content/themes/woopress/images/main-img/glasses.svg" alt="Simple">
             <p>Просто и доступно</p>
         </div>
         <div class="field">
-            <img src="/wp-content/themes/woopress/images/main-img/book.svg" alt="book">
+            <img src="/wp-content/themes/woopress/images/main-img/book.svg" alt="animals">
             <p>Реальные животные</p>
         </div>
     </div>
     <div class="type-of-animals">
         <div class="block-two-column">
-            <a href="http://www.veterinary.wiki/category/cats/" id="cats" class="big-img">
+            <a href="https://www.veterinary.wiki/category/cats/" id="cats" class="big-img">
                 <h4>Коты и кошки</h4>
                 <p class="post-link">Статьи ></p>
             </a>
@@ -34,16 +34,16 @@
         </div>
         <div class="block-two-column">
             <div class="block-animals">
-                <a href="http://www.veterinary.wiki/%d0%b2%d1%81%d0%b5-%d0%ba%d0%b0%d1%82%d0%b5%d0%b3%d0%be%d1%80%d0%b8%d0%b8/" class="new-type">
+                <a href="https://www.veterinary.wiki/all-categories/" class="new-type">
                     <h4>Нет вашего животного?</h4>
                     <p class="post-link">Смотреть все ></p>
                 </a>
-                <a href="http://www.veterinary.wiki/category/rodents/" id="rodents">
+                <a href="https://www.veterinary.wiki/category/rodents/" id="rodents">
                     <h4>Грызуны</h4>
                     <p class="post-link">Статьи ></p>
                 </a>
             </div>
-            <a href="http://www.veterinary.wiki/category/dogs/" id="dogs" class="big-img">
+            <a href="https://www.veterinary.wiki/category/dogs/" id="dogs" class="big-img">
                 <h4>Собаки</h4>
                 <p class="post-link">Статьи ></p>
             </a>
@@ -98,7 +98,7 @@
             <img src="/wp-content/themes/woopress/images/main-img/right-sidebar.svg" alt="shop">
             <div class="block-doctor">
                 <p>Проконсультируйся у нашего специалиста </p>
-                <a href="http://www.veterinary.wiki/category/%d0%bd%d0%b0%d1%88%d0%b8-%d0%b2%d1%80%d0%b0%d1%87%d0%b8/">Консультация ></a>
+                <a href="https://www.veterinary.wiki/category/our-doctors/">Консультация ></a>
             </div>
         </div>
 

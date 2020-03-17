@@ -41,7 +41,7 @@ if ($_SERVER[REQUEST_URI]=="/"){
 
                 <?php endwhile; else: ?>
 
-                    <h3><?php _e('No pages were found!', ET_DOMAIN) ?></h3>
+                    <h3><?php _e('Страница не найдена', ET_DOMAIN) ?></h3>
 
                 <?php endif; ?>
                 <?php
