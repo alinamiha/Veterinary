@@ -1171,6 +1171,24 @@ function get_terms( $args = array(), $deprecated = '' ) {
 			}
 		}
 	}
+global $orderby;
+    $_orderby = strtolower($orderby);
+    if ( 'count' == $_orderby )
+        $orderby = 'tt.count';
+    else if ( 'name' == $_orderby )
+        $orderby = 't.name';
+    else if ( 'slug' == $_orderby )
+        $orderby = 't.slug';
+    else if ( 'term_group' == $_orderby )
+        $orderby = 't.term_group';
+    else if ( 'sort' == $_orderby )
+        $orderby = 't.sort';
+    else if ( 'none' == $_orderby )
+        $orderby = '';
+    elseif ( empty($_orderby) || 'id' == $_orderby )
+        $orderby = 't.term_id';
+    else
+        $orderby = 't.name';
 
 	// Don't pass suppress_filter to WP_Term_Query.
 	$suppress_filter = $args['suppress_filter'];

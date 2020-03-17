@@ -98,9 +98,10 @@
 
                                 <?php endwhile; ?>
                             <?php else: ?>
-
-                                <h1><?php _e('Посты не найдены', ET_DOMAIN) ?></h1>
-
+                                <div class="error-search">
+                                    <h1><?php _e('Ничего не найдено', ET_DOMAIN) ?></h1>
+                                    <p> Попробуйте воспользоваться каталогом</p>
+                                </div>
                             <?php endif;
                         }
                         endif; ?>

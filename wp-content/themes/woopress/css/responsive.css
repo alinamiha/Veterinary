@@ -1,6 +1,9 @@
 /*=================================*/
 /* Responsive Styles / #responsive */
 /*=================================*/
+img, button, a{
+  outline: none;
+}
 @media only screen and (min-width: 992px) {
   .banner iframe {
     max-height: 190px;
@@ -2290,7 +2293,7 @@
   .back-history {
     top: 50%;
     margin-top: -9px;
-    display: none;
+    /*display: none;*/
   }
   .comment-reply-link {
     position: static;
@@ -2904,7 +2907,7 @@
     font-size: 18px;
   }
   .back-history {
-    display: none;
+    /*display: none;*/
   }
   .et_section.et-section-video {
     height: 270px;
@@ -3454,6 +3457,9 @@
   }
   .tabs .tab-title.opened:before{
     bottom: -8px;
+  }
+  #breadcrumb{
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 320px) {

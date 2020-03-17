@@ -7801,6 +7801,8 @@ article.post h2 {
 }
 .comments-list .media {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .comments-list .media p {
   font-family: Roboto;
@@ -7845,7 +7847,7 @@ article.post h2 {
 .comments-list .children {
   /*margin-top: 25px;*/
   list-style: none;
-  display: flex;
+  /*display: flex;*/
   justify-content: flex-end
 }
 .comments-list .children li .media {
@@ -7853,6 +7855,7 @@ article.post h2 {
   background: #F7F7F7;
   padding: 17px 18px;
   width: 700px;
+  float: right;
 }
 .comments-list .children li .media:before {
   position: absolute;
@@ -19541,7 +19544,7 @@ a{
   background: #48ACFF;
   border-radius: 58px;
   float: right;
-  height: 40px;
+  /*height: 40px;*/
 }
 .consulting:last-of-type{
   margin-right: 10px;
@@ -19965,6 +19968,13 @@ figure.wp-block-image.is-resized{
   font-weight: 600;
   line-height: 40px;
 }
+.error-search h1{
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.error-search p{
+  font-size: 20px;
+}
 @media only screen and (min-width: 1145px){
   .container,.main-footer .container{
     width: 1170px;
@@ -20077,6 +20087,10 @@ figure.wp-block-image.is-resized{
   .consultation-block{
     margin: 0 auto;
   }
+  .comments-list .children li .media{
+    width: 100%;
+    float: none;
+  }
 }
 @media screen and (max-width:975px){
   .block-info{
@@ -20187,6 +20201,9 @@ figure.wp-block-image.is-resized{
   .carousel-item.active,.carousel-item-left,.carousel-item-next {
     display: flex;
     flex-direction: column;
+  }
+  .test_sub_cat{
+    width: 100%;
   }
 }
 @media only screen and (max-width: 579px){

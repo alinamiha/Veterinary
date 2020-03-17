@@ -3179,7 +3179,7 @@ if(!function_exists('etheme_breadcrumbs')) {
           echo $before . ' ' . single_cat_title('', false) . '' . $after;
 
         } elseif ( is_search() ) {
-          echo $before . 'Search results for "' . get_search_query() . '"' . $after;
+          echo $before . 'Результаты по запросу "' . get_search_query() . '"' . $after;
 
         } elseif ( is_day() ) {
           echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
@@ -5181,6 +5181,15 @@ function kama_get_most_viewed( $args = '' ){
     else
         return $out;
 }
+function my_category_order($orderby, $args)
+{
+    if($args['orderby'] == 'sort')
+        return 't.sort';
+    else
+        return $orderby;
+}
+
+add_filter('get_terms_orderby', 'my_category_order', 10, 2);
 
 
 

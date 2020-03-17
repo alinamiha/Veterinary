@@ -99,7 +99,7 @@
                                         'taxonomy' => 'category',
                                         'type' => 'post',
                                         'child_of' => 0,
-                                        'orderby' => 'count',
+                                        'orderby' => 'sort',
                                         'parent' => '',
 
                                     ]);
