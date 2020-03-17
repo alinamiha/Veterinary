@@ -35,7 +35,6 @@
                             <?php
                             $thisCat = get_category(get_query_var('cat'), false);
                             $categories = get_categories(array(
-                                'orderby' => 'ID',
                                 'parent' => $thisCat->term_taxonomy_id
                             ));
 
@@ -47,8 +46,6 @@
                                     $myposts = get_posts(array(
                                         'numberposts' => -1,
                                         'category' => $category->cat_ID,
-                                        'orderby' => 'ID',
-                                        'order' => 'DESC ',
                                     ));
                                     # выводим записи
                                     echo '<ul>';
@@ -108,27 +105,26 @@
 
                     </div>
 
-                    <div class="related-posts">
 
                         <?php
                         //for use in the loop, list 5 post titles related to first tag on current post
+
                         $tags = wp_get_post_tags($post->ID);
                         if ($tags) { ?>
-
-
-
                             <?php
-                            $first_tag = $tags[0]->term_id;
+                            $first_tag = $tags[1]->term_id;
                             $args = array(
                                 'tag__in' => array($first_tag),
                                 'post__not_in' => array($post->ID),
                                 'posts_per_page' => 4,
                                 'caller_get_posts' => 1
                             );
+
                             $my_query = new WP_Query($args);
                             if ($my_query->have_posts()) {
                                 ?>
-                        <h3>Рекомендованые статьи</h3>
+                    <div class="related-posts">
+                    <h3>Рекомендованые статьи</h3>
                         <div style="border: 1px solid #E5E5E5;"></div>
                         <div class="recommmend-post">
                                 <?php
@@ -147,12 +143,16 @@
                                     </div>
                                 <?php
                                 endwhile;
-                            }
-                            wp_reset_query();
-                            }
-                            ?>
+                                ?>
                         </div>
                     </div>
+
+                        <?php
+                            }
+                            wp_reset_query();
+
+                            }
+                            ?>
 
                 </div>
 

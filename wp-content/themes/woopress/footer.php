@@ -14,7 +14,9 @@
 	                <?php if ( !is_active_sidebar( 'footer1' ) ) : ?>
 	               		<?php if($fd) etheme_footer_demo('footer1'); ?>
 	                <?php else: ?>
+                    <?php if($_SERVER[REQUEST_URI]=="/"):?>
 	                    <?php dynamic_sidebar( 'footer1' ); ?>
+                    <?php endif;?>
 	                <?php endif; ?>  
 				</div>
 			</div>
