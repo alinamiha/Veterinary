@@ -1963,11 +1963,14 @@ jQuery(document).ready(function($){
     var eForm = $('#contact-form');
     var spinner = jQuery('.spinner');
     // var a = (document).getElementsByTagName('input[type="text"]').value();
-    var inputData = document.getElementById("author").value;
-    var html = '<p>'+'aa'+'</p>';
-    if(inputData.length==0){
-        document.getElementById("author").html(html);
+    if(document.getElementById("author") ){
+        var inputData = document.getElementById("author").value;
+        var html = '<p>'+'aa'+'</p>';
+        if(!inputData.length==0){
+            document.getElementById("author").html(html);
+        }
     }
+
 
     $('.required-field').focus(function(){
         $(this).removeClass('validation-failed');
@@ -2112,6 +2115,29 @@ $('.open-popup-link').magnificPopup({
 
 $('.prettySocial').prettySocial();
 
+
+
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+
+
+
 }); // document ready
 function toggleMainMenu(){
         jQuery('.main-menu-sidebar').slideToggle();
@@ -2127,28 +2153,6 @@ jQuery('.side-li').on('click', function () {
     jQuery('.side-ul').slideToggle();
     jQuery('.side-li').toggleClass('rotate-side');
 })
-
-
-
-
-(function() {
-    'use strict';
-    window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    }, false);
-})();
-
 
 
 

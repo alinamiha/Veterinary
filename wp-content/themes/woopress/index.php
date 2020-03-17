@@ -158,12 +158,6 @@
 
 			</div>
 
-            <div class="consultation-">
-                <div class="consultation-block">
-                    <p>Проконсультируйся у нашего специалиста</p>
-                    <a href="/">Консультация ></a>
-                </div>
-            </div>
 		</div>
 	</div>
 </div>
