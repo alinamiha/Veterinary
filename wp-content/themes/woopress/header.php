@@ -3,7 +3,8 @@
 <head>
     <?php global $etheme_responsive, $woocommerce; ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-    
+    <meta name="description" content="Симптомы, Диагностика, Лечение, Содержание, Воспитание. Ваш личный справочник по домашним животным - смотрите бесплатно!"/>
+
     <meta name="viewport" content="<?php if($etheme_responsive): ?>width=device-width, initial-scale=1, maximum-scale=2.0<?php else: ?>width=1200<?php endif; ?>"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

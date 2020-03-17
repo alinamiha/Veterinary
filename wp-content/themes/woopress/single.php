@@ -190,26 +190,45 @@ $slider_id = rand(100, 10000);
                         $sub_cats = get_categories(array(
                             'child_of' => $cats[0]->category_parent
                         ));
+                        if($cats[0]->category_parent !== 0){
                         foreach ($sub_cats as $cat) {
-//                            var_dump($cat->cat_ID) ;
                             $posts = get_posts(array(
                                 'posts_per_page' => 5,
                                 'category' => $cat->cat_ID,
                             ));
                             ?>
-                        <h4 class="side-li"><?php echo $cat->name; ?></h4>
-                        <div style="border: 1px solid #E5E5E5;"></div>
-                        <ul class="side-ul">
+                            <div class="category-wrapper">
+                                <h4 class="side-li"><?php echo $cat->name; ?></h4>
+                                <div style="border: 1px solid #E5E5E5;"></div>
+                                <ul class="side-ul">
 
-                            <?php foreach ($posts as $post): ?>
-                                <li>
-                                    <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-                                </li>
-                            <?php endforeach;
+                                    <?php foreach ($posts as $post): ?>
+                                        <li>
+                                            <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        <? }}else{
+                            $posts = get_posts(array(
+                                'posts_per_page' => 5,
+                                'category' => $cats[0]->cat_ID,
+                                'order' => ASC
+                            ));
+                            ?>
+                            <div class="category-wrapper">
+                                <h4 class="side-li"><?php echo $cats[0]->name; ?></h4>
+                                <div style="border: 1px solid #E5E5E5;"></div>
+                                <ul class="side-ul">
 
-                        }
-                        ?>
-                        </ul>
+                                    <?php foreach ($posts as $post): ?>
+                                        <li>
+                                            <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                       <? } ?>
 
                     </div>
                 </div>

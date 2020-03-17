@@ -1259,7 +1259,6 @@ if(!function_exists('et_insert_fb_in_head')) {
 			$description = et_excerpt( $post->post_content, $post->post_excerpt );
 			$description = strip_tags($description);
 			$description = str_replace("\"", "'", $description);
-
 	        echo '<meta property="og:title" content="' . get_the_title() . '"/>';
 	        echo '<meta property="og:type" content="article"/>';
 	        echo '<meta property="og:description" content="' . $description . '"/>';

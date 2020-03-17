@@ -75,7 +75,7 @@
                                     </a>
                                 </div>
                                 <div id="main-mobile-menu" class="column">
-                                    <button class="menu-icon-btn" onclick="toggleMainMenu()">
+                                    <button class="menu-icon-btn">
                                         <span class="burger-menu-icon"></span>
                                     </button>
                                 </div>
