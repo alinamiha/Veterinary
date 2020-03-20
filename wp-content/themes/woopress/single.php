@@ -98,7 +98,7 @@ $slider_id = rand(100, 10000);
                                 <h6 class="active"><?php the_category(',&nbsp;') ?></h6>
 
 
-                                <h2 class="entry-title"><?php the_title(); ?></h2>
+                                <h1 class="entry-title"><?php the_title(); ?></h1>
 
                                 <?php if (etheme_get_option('blog_byline')): ?>
                                     <div class="meta-post">
@@ -193,7 +193,7 @@ $slider_id = rand(100, 10000);
                         if($cats[0]->category_parent !== 0){
                         foreach ($sub_cats as $cat) {
                             $posts = get_posts(array(
-                                'posts_per_page' => 5,
+                                'posts_per_page' => '50',
                                 'category' => $cat->cat_ID,
                             ));
                             ?>
@@ -211,7 +211,7 @@ $slider_id = rand(100, 10000);
                             </div>
                         <? }}else{
                             $posts = get_posts(array(
-                                'posts_per_page' => 5,
+                                'posts_per_page' => 50,
                                 'category' => $cats[0]->cat_ID,
                                 'order' => ASC
                             ));

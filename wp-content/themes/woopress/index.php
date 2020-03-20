@@ -38,7 +38,11 @@
                                 'parent' => $thisCat->term_taxonomy_id
                             ));
 
+
                             if ($categories) {
+                                ?>
+                                <h1 class="hide-h1"><?php echo $thisCat->name; ?></h1>
+                                <?php
                                 foreach ($categories as $category) {
 
                                     echo '<div class="test_sub_cat"><p>' . $category->name . '</p><div style="border: 1px solid #E5E5E5;"></div>';
@@ -63,6 +67,7 @@
                                 ?>
                                 <?php $posts = get_posts("category=$thisCat->cat_ID&numberposts=$post->ID&order=ASC"); ?>
                                 <?php if ($posts) : ?>
+                                <h1 class="hide-h1"><? echo $thisCat->name; ?></h1>
 
                                     <?php foreach ($posts as $post) : setup_postdata($post); ?>
                                         <?php
@@ -90,11 +95,7 @@
                         else: { ?>
                             <?php if (have_posts()):
                                 while (have_posts()) : the_post(); ?>
-                                    <p class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                    </p>
-
-                                    <!--                            --><?php //get_template_part('content', $content_layout); ?>
-
+                                    <p class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                                 <?php endwhile; ?>
                             <?php else: ?>
                                 <div class="error-search">

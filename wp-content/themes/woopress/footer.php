@@ -6,7 +6,7 @@
 	$ft = ''; $ft = apply_filters('custom_footer_filter',$ft);
 	$custom_footer = etheme_get_custom_field('custom_footer', et_get_page_id()); 
 ?>
-    
+
     <?php if($custom_footer != 'without'): ?>
 		<?php if((is_active_sidebar('footer1') || $fd) && empty($custom_footer)): ?>
 			<div class="footer-top footer-top-<?php echo esc_attr($ft); ?>">
@@ -17,7 +17,7 @@
                     <?php if($_SERVER[REQUEST_URI]=="/"):?>
 	                    <?php dynamic_sidebar( 'footer1' ); ?>
                     <?php endif;?>
-	                <?php endif; ?>  
+	                <?php endif; ?>
 				</div>
 			</div>
 		<?php endif; ?>
@@ -36,45 +36,12 @@
 
 			</footer>
 		<?php endif; ?>
-	
-		<?php if(!empty($custom_footer)): ?>
-            <footer class="main-footer main-footer-<?php echo esc_attr($ft); ?> text-color-<?php echo $fcolor; ?>" <?php if($fbg != ''): ?>style="background-color:<?php echo $fbg; ?>"<?php endif; ?>>
-                <div class="container">
-                    <?php echo et_get_block($custom_footer); ?>  
-                </div>
-            </footer>
-        <?php endif; ?>
-	
-		<?php if((is_active_sidebar('footer9') || is_active_sidebar('footer10') || $fd) && empty($custom_footer)): ?>
-		<div class="copyright copyright-<?php echo esc_attr($ft); ?> text-color-<?php echo $fcolor; ?>" <?php if($fbg != ''): ?>style="background-color:<?php echo $fbg; ?>"<?php endif; ?>>
-			<div class="container">
-				<div class="row-copyrights">
-					<div class="pull-left">
-						<?php if(is_active_sidebar('footer9')): ?> 
-							<?php dynamic_sidebar('footer9'); ?>	
-						<?php else: ?>
-							<?php if($fd) etheme_footer_demo('footer9'); ?>
-						<?php endif; ?>
-					</div>
-					<div class="clearfix visible-xs"></div>
-					<div class="copyright-payment pull-right">
-						<?php if(is_active_sidebar('footer10')): ?> 
-							<?php dynamic_sidebar('footer10'); ?>	
-						<?php else: ?>
-							<?php if($fd) etheme_footer_demo('footer10'); ?>
-						<?php endif; ?>
-					</div>
-				</div>
-			</div>
-		</div>
-	    <?php endif; ?>
     <?php endif; ?>
 	
 	</div> <!-- page wrapper -->
 	</div> <!-- st-content-inner -->
 	</div>
 	</div>
-	<?php do_action('after_page_wrapper'); ?>
 	</div> <!-- st-container -->
 	
 

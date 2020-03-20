@@ -7366,7 +7366,7 @@ body #yith-wcwl-popup-message {
   margin-top: 20px;
   margin-bottom: 55px;
 }
-article.post h2 {
+article.post h2,article.post h1 {
   margin-bottom: 10px;
   font-weight: 600;
   font-family: Roboto;
@@ -18801,10 +18801,11 @@ position: absolute;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 19px;
   text-align: center;
   color: #FFFFFF;
+  margin-top: 20px;
 
 }
 .text-parallax h1{
@@ -19149,6 +19150,7 @@ position: absolute;
 .recent-added-post{
   margin-top: 17px;
   margin-bottom: 100px;
+  touch-action: none;
 }
 .recent-added-post img{
   width: 259px;
@@ -19942,6 +19944,9 @@ transition: all .2s ease-in-out;
 }
 .error-search p{
   font-size: 20px;
+}
+.hide-h1{
+  display: none;
 }
 @media only screen and (min-width: 1145px){
   .container,.main-footer .container{

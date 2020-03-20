@@ -46,12 +46,6 @@ if (!function_exists('etheme_footer_demo')) {
     function etheme_footer_demo($position)
     {
         switch ($position) {
-
-            case 'footer1':
-                ?>
-
-                <?php
-                break;
             case 'footer2':
 
                 ?>
@@ -101,19 +95,7 @@ if (!function_exists('etheme_footer_demo')) {
                 <?php
 
                 break;
-            case 'footer9':
-                ?>
-                <div class="textwidget">
-                    <p>© Created with <i class="fa fa-heart default-colored"></i> by <a href="#" class="default-link">8Theme</a>.
-                        All Rights Reserved</p>
-                </div>
-                <?php
-                break;
-            case 'footer10':
-                ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/assets/payments.png">
-                <?php
-                break;
+
         }
     }
 }
