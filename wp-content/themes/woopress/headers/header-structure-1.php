@@ -64,16 +64,7 @@
 
                                     </div>
                                 </div>
-                                <div class="private-cabinet">
-                                    <a href="/">
-                                    <img src="/wp-content/themes/woopress/images/main-img/home-icon.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="shop-cabinet">
-                                    <a href="/">
-                                    <img src="/wp-content/themes/woopress/images/main-img/shop-icon.svg" alt="">
-                                    </a>
-                                </div>
+
                                 <div id="main-mobile-menu" class="column">
                                     <button class="menu-icon-btn">
                                         <span class="burger-menu-icon"></span>
@@ -115,6 +106,7 @@
      ?>
 
         <li><a href="https://www.veterinary.wiki/category/our-doctors/">Наши врачи</a></li>
+        <li><a href="https://www.veterinary.wiki/blog/">Блог</a></li>
     </ul>
 
 </div>

@@ -5190,6 +5190,21 @@ function my_category_order($orderby, $args)
 
 add_filter('get_terms_orderby', 'my_category_order', 10, 2);
 
+/**
+ * Заполняет поле для атрибута alt на основе заголовка изображения при его вставки в контент поста.
+ *
+ * @param array $response
+ *
+ * @return array
+ */
+function change_empty_alt_to_title( $response ) {
+    if ( ! $response['alt'] ) {
+        $response['alt'] = sanitize_text_field( $response['title'] );
+    }
 
+    return $response;
+}
+
+add_filter( 'wp_prepare_attachment_for_js', 'change_empty_alt_to_title' );
 
 

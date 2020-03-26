@@ -184,6 +184,24 @@ table {
   width: 100%;
   margin-bottom: 20px;
 }
+h1{
+  font-size: 32px;
+}
+h2{
+  font-size: 24px;
+}
+h3{
+  font-size: 18px;
+}
+h4{
+  font-size: 16px;
+}
+h5 {
+  font-size: 13px;
+}
+h6{
+  font-size: 10px;
+}
 table th,
 table td {
   padding: 8px;
@@ -271,7 +289,7 @@ a:hover {
   box-sizing: content-box;
 }
 a:focus {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   outline: none;
   color: #48ACFF;
 }
@@ -7417,15 +7435,7 @@ article.post h2,article.post h1 {
   line-height: 155%;
   color: #000000;
 }
-.content-article h4,.content-article h3,.content-article h5,.content-article h6{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 135.19%;
-  color: #2C2C2C;
 
-}
 .content-article .more-link {
   margin-top: 5px;
   display: block;
@@ -9369,6 +9379,14 @@ table.variations tr.shipping td {
 .directory-container .content .recentCarousel .slide-item .active{
   display: none;
 }
+.directory-container{
+  min-height: calc(100vh - 399px);
+  height: 100%;
+}
+.page-content{
+  min-height: calc(100vh - 509px);
+  height: 100%;
+}
 .related-posts h5 a{
   font-family: Segoe UI;
   font-style: normal;
@@ -10706,6 +10724,9 @@ table.variations tr.shipping td {
 .blog-post .content-article ul,
 .blog-post .content-article ol {
   padding-left: 20px;
+}
+.blog-post .content-article .blocks-gallery-grid{
+  paddingall-cat-ill-left: 0;
 }
 .blog-post ul ul {
   padding-left: 20px;
@@ -14375,7 +14396,6 @@ html.st-menu-open body {
   position: absolute;
   right: 15px;
   top: 21px;
-  background-image: url(images/small-close.png);
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -17196,7 +17216,6 @@ body.admin-bar.woocommerce-demo-store {
   width: 35px;
   height: 35px;
   display: block;
-  background-image: url(images/medium-cross.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -18787,7 +18806,7 @@ position: absolute;
   display: none;
 }
 .text-parallax{
-  background-image: url("/wp-content/themes/woopress/images/main-img/bcg.jpg");
+  background-image: url("/wp-content/themes/woopress/images/main-img/veterinary-wiki.jpg");
   position: relative;
   z-index: 2;
   height: 700px;
@@ -18878,7 +18897,7 @@ position: absolute;
   font-weight: normal;
   font-size: 25px;
   line-height: 135.19%;
-  color: #2C2C2C;
+  color: #000000;
   text-transform: none;
 }
 .type-of-animals .block-animals .new-type a{
@@ -18909,7 +18928,7 @@ position: absolute;
   font-weight: normal;
   font-size: 25px;
   line-height: 135.19%;
-  color: #2C2C2C;
+  color: #000000;
   text-transform: none;
 }
 #birds h4{
@@ -18920,7 +18939,7 @@ position: absolute;
   font-weight: normal;
   font-size: 25px;
   line-height: 135.19%;
-  color: #2C2C2C;
+  color: #000000;
   text-transform: none;
 }
 .type-of-animals .block-animals>div{
@@ -18935,7 +18954,7 @@ position: absolute;
   font-weight: normal;
   font-size: 25px;
   line-height: 135.19%;
-  color: #2C2C2C;
+  color: #000000;
   text-transform: none;
   margin-bottom: 0;
 }
@@ -19008,7 +19027,7 @@ position: absolute;
 }
 
 #cats{
-  background-image: url("/wp-content/themes/woopress/images/main-img/cats.svg");
+  background-image: url("/wp-content/themes/woopress/images/main-img/cat.png");
   width: 270px;
   height: 433px;
   background-repeat: no-repeat;
@@ -19024,7 +19043,7 @@ position: absolute;
   color: #ffffff;
 }
 #dogs{
-  background-image: url("/wp-content/themes/woopress/images/main-img/dogs.svg");
+  background-image: url("/wp-content/themes/woopress/images/main-img/dog.png");
   width: 270px;
   height: 433px;
   background-repeat: no-repeat;
@@ -19041,7 +19060,7 @@ position: absolute;
   color: #ffffff;
 }
 #rodents{
-  background-image: url("/wp-content/themes/woopress/images/main-img/rodents.svg");
+  background-image: url("/wp-content/themes/woopress/images/main-img/rodent.png");
   width: 270px;
   height: 212px;
   background-repeat: no-repeat;
@@ -19056,7 +19075,7 @@ position: absolute;
   color: #ffffff;
 }
 #exotics{
-  background-image: url("/wp-content/themes/woopress/images/main-img/exotics.svg");
+  background-image: url("/wp-content/themes/woopress/images/main-img/exotic.png");
   width: 270px;
   height: 212px;
   background-repeat: no-repeat;
@@ -19072,7 +19091,7 @@ position: absolute;
   color: #ffffff;
 }
 #birds{
-  background-image: url("/wp-content/themes/woopress/images/main-img/birds.svg");
+  background-image: url("/wp-content/themes/woopress/images/main-img/bird.png");
   width: 270px;
   height: 212px;
   background-repeat: no-repeat;
@@ -19197,7 +19216,7 @@ position: absolute;
   font-weight: normal;
   font-size: 10px;
   line-height: 12px;
-  color: #5E5E5E;
+  color: #000000;
 }
 .recent-added-post .block-custom:hover{
   background: #5E5E5E;
@@ -19346,7 +19365,7 @@ h5.media-heading{
   font-weight: normal;
   font-size: 10px;
   line-height: 12px;
-  color: #C4C4C4;
+  color: #C4C4C4!important;
   margin-bottom: 25px;
 }
 p.cop-text{
@@ -19356,10 +19375,30 @@ p.cop-text{
   font-size: 10px;
   line-height: 12px;
   color: #C4C4C4;
-  align-self: flex-end;
-  margin-bottom: 29px;
-  text-align: right;
+}
+.third-footer-block{
   width: 25%;
+  margin-bottom: 29px;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.third-footer-block ul li{
+  margin-bottom: 20px;
+}
+.third-footer-block ul li a{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.third-footer-block ul li a:hover{
+  color: #ffffff;
+  text-decoration: underline;
 }
 .textwidget{
   margin-top: 40px;
@@ -19676,7 +19715,7 @@ input[type="search"].validation-failed{
   font-weight: 500;
   font-size: 18px;
   line-height: 194.69%;
-  color: #5E5E5E;
+  color: #000000;
 }
 .directory-page .entry-title a:hover{
   color: #48ACFF;
@@ -19719,7 +19758,7 @@ input[type="search"].validation-failed{
 }
 
 .directory-container .entry-title a:hover,.link-alone:hover{
-  color: #5E5E5E;
+  color: #000000;
   text-decoration: underline;
 }
 .block-with-post{
@@ -19902,7 +19941,7 @@ transition: all .2s ease-in-out;
   font-weight: 500;
   font-size: 18px;
   line-height: 135.19%;
-  color: #2C2C2C;
+  color: #000000;
   margin-bottom: 7px;
   cursor: pointer;
 }
@@ -19946,8 +19985,26 @@ transition: all .2s ease-in-out;
   font-size: 20px;
 }
 .hide-h1{
-  display: none;
+  /*display: none;*/
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135.19%;
+  color: #C4C4C4;
+  margin: 0;
 }
+
+.rec-block h4{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 135.19%;
+  color: #C4C4C4;
+}
+
+
+
 @media only screen and (min-width: 1145px){
   .container,.main-footer .container{
     width: 1170px;
@@ -20095,10 +20152,11 @@ transition: all .2s ease-in-out;
   .first-block-footer p{
     display: none;
   }
-  p.cop-text{
+  .third-footer-block{
     width: 205px;
     margin: 40px auto;
-    text-align: left;
+    /*text-align: left;*/
+    padding: 0;
   }
 
 }

@@ -42,6 +42,7 @@
                             if ($categories) {
                                 ?>
                                 <h1 class="hide-h1"><?php echo $thisCat->name; ?></h1>
+                                <div style="border: 1px solid #E5E5E5;margin-bottom: 10px;;margin-top: 10px;"></div>
                                 <?php
                                 foreach ($categories as $category) {
 
@@ -69,7 +70,13 @@
                                 <?php if ($posts) : ?>
                                 <h1 class="hide-h1"><? echo $thisCat->name; ?></h1>
 
-                                    <?php foreach ($posts as $post) : setup_postdata($post); ?>
+                                    <? if ($thisCat->cat_ID == 31) { ?>
+                                        <div style="border: 1px solid #E5E5E5;margin-bottom: 20px;;margin-top: 10px;"></div>
+
+                                    <? } else { ?>
+                                        <div style="border: 1px solid #E5E5E5;margin-bottom: 10px;;margin-top: 10px;"></div>
+                                    <? } ?>
+                                        <?php foreach ($posts as $post) : setup_postdata($post); ?>
                                         <?php
                                         if ($thisCat->cat_ID == 31) {
                                             ?>
@@ -94,7 +101,13 @@
 
                         else: { ?>
                             <?php if (have_posts()):
-                                while (have_posts()) : the_post(); ?>
+                                $currentTag = single_tag_title('', false);
+                            ?>
+                            <h1 class="hide-h1">Статьи по тегу <? echo $currentTag;?></h1>
+                                <div style="border: 1px solid #E5E5E5;margin-bottom: 10px;;margin-top: 10px;"></div>
+                            <?php
+                                while (have_posts()) : the_post();?>
+
                                     <p class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                                 <?php endwhile; ?>
                             <?php else: ?>

@@ -14,7 +14,7 @@ get_header();
             <div class="row flex">
                 <div class="content <?php esc_attr_e( $l['content-class'] ); ?>">
                     <div class="directory-page <?php if ($content_layout == 'grid'): ?>blog-masonry row<?php endif ?>">
-                        <h4 class="active">Все категории</h4>
+                        <h1 class="active">Все категории</h1>
                         <div style="border: 1px solid #E5E5E5;"></div>
                         <div class="block-with-post gen-cat">
 

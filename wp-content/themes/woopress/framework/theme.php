@@ -88,7 +88,13 @@ if (!function_exists('etheme_footer_demo')) {
                             echo '</ul>';
                             ?>
                         </div>
-                        <p class="cop-text">Все права защищены Veterinary Wiki 2020</p>
+                        <div class="third-footer-block">
+                            <ul>
+                                <li><a href="https://www.veterinary.wiki/category/our-doctors/">Наши врачи</a></li>
+                                <li><a href="https://www.veterinary.wiki/blog/">Блог</a></li>
+                            </ul>
+                            <p class="cop-text">Все права защищены Veterinary Wiki 2020</p>
+                        </div>
                     </div>
                 </div>
 

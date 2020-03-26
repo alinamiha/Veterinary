@@ -103,7 +103,9 @@
         </div>
 
     </div>
-    <h4 >Рекомендованые статьи</h4>
-    <div style="border: 1px solid #E5E5E5;"></div>
-    <?php randomPosts(); ?>
+    <div class="rec-block">
+        <h4>Рекомендованые статьи</h4>
+        <div style="border: 1px solid #E5E5E5;"></div>
+        <?php randomPosts(); ?>
+    </div>
 </div >
