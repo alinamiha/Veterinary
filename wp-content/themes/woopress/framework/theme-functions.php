@@ -19,7 +19,6 @@ if(!function_exists('etheme_enqueue_styles')) {
         $force_ultimate_styles = etheme_get_option('force_addons_css');
 
         if ( !is_admin() ) {
-            wp_enqueue_style("fa",get_template_directory_uri().'/css/font-awesome.min.css');
             wp_enqueue_style("bootstrap",get_template_directory_uri().'/css/bootstrap.min.css');
             wp_enqueue_style("parent-style",get_template_directory_uri().'/style.css');
             wp_enqueue_style("parent-plugins",get_template_directory_uri().'/css/plugins.css');

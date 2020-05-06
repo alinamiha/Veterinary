@@ -7819,7 +7819,7 @@ article.post h2,article.post h1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 135.19%;
   color: #5E5E5E;
   margin-bottom: 20px;
@@ -7837,7 +7837,7 @@ article.post h2,article.post h1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 135.19%;
   color: #000000;
 }
@@ -7866,8 +7866,9 @@ article.post h2,article.post h1 {
   background: #F7F7F7;
   padding: 17px 18px;
   width: 700px;
-  float: right;
+  /*float: right;*/
 }
+
 .comments-list .children li .media:before {
   position: absolute;
   left: -51px;
@@ -7917,23 +7918,27 @@ article.post h2,article.post h1 {
   width: 35%;
 }
 #commentform textarea {
-  height: 244px;
+  height: 170px;
   resize: none;
   background: #F7F7F7;
   border: none;
   padding: 17px;
+  font-size: 15px;
+  color: #000000;
+  border-radius: 7px;
 }
 #commentform textarea::placeholder{
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 135.19%;
-  color: #C4C4C4;
+  color: #343131;
 
 }
 #commentform .form-submit {
   text-align: right;
+  margin-bottom: 35px;
 }
 #commentform .form-submit input[type="submit"] {
   background: none;
@@ -7941,13 +7946,15 @@ article.post h2,article.post h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
-  line-height: 17px;
   color: #48ACFF;
-  padding: 0;
   letter-spacing: 1px;
+  line-height: 12px;
+  padding: 14px 21px;
+  border: 1px solid #48acff;
 }
 #commentform .form-submit input[type="submit"]:hover{
-  text-decoration: underline;
+  background: #48acff;
+  color: #ffffff;
 }
 .form-control {
   border-radius: 0;
@@ -7988,7 +7995,7 @@ article.post h2,article.post h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 135.19%;
-  color: #C4C4C4;
+  color: #48acff;
 }
 .control-label {
   font: 14px/22px 'Raleway', Georgia, Helvetica, sans-serif;
@@ -19295,7 +19302,7 @@ position: absolute;
 }
 .block-doctor {
   height: 331px;
-  background-image: url("/wp-content/themes/woopress/images/main-img/doctor.png");
+  background-image: url("/wp-content/themes/woopress/images/main-img/doctor-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 270px;
@@ -19595,7 +19602,7 @@ text-decoration: underline;
   font-weight: 500;
   font-size: 16px;
   line-height: 135.19%;
-  color: #C4C4C4;
+  color: #000000;
 }
 .consultation-block{
   background-image: url(/wp-content/themes/woopress/images/main-img/doctor.png);
@@ -20172,7 +20179,7 @@ transition: all .2s ease-in-out;
     margin-right: auto;
   }
   .about-company a{
-    margin: 0 auto;
+    /*margin: 0 auto;*/
   }
   .main-footer-1 .container .row .col-md-3:first-child{
     margin: 0 auto;

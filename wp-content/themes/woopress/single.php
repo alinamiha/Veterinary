@@ -235,6 +235,9 @@ $slider_id = rand(100, 10000);
             </div>
         </div>
     </div>
+    <script>
+
+    </script>
 <?php
 get_footer();
 ?>
