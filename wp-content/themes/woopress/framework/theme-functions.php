@@ -1265,7 +1265,7 @@ if(!function_exists('et_insert_fb_in_head')) {
 	        echo '<meta property="og:site_name" content="'. get_bloginfo('name') .'"/>';
 
 			if(!has_post_thumbnail( $post->ID )) {
-				echo '<meta property="og:image" content="http://www.veterinary.wiki/wp-content/uploads/2020/03/preview.png"/>';
+				echo '<meta property="og:image" content="https://www.veterinary.wiki/wp-content/uploads/2020/01/preview.jpg"/>';
 			} else {
 				$thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
 				echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';

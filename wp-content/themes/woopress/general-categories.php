@@ -39,7 +39,7 @@ get_header();
                                             $sub_cats = get_categories(array(
                                                 'child_of' => $cat->cat_ID
                                             ));
-                                            echo'<div class="flex">';
+                                            echo'<div class="flex" style="flex-wrap: wrap">';
                                                 foreach ($sub_cats as $sub_cat_key) {
                                                     echo '<div class="test_sub_cat"><p>' . $sub_cat_key->name . '</p>';
                                                     # получаем записи из рубрики
@@ -54,7 +54,7 @@ get_header();
                                                     global $post;
                                                     foreach ($myposts as $post) {
                                                         setup_postdata($post);
-                                                        echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+                                                        echo '<li><a href="' . get_permalink() . '" style="font-weight: normal">' . get_the_title() . '</a></li>';
                                                     }
                                                     wp_reset_postdata(); // сбрасываем глобальную переменную пост
                                                     echo '</ul>';

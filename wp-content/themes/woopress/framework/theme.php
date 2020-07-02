@@ -92,6 +92,7 @@ if (!function_exists('etheme_footer_demo')) {
                             <ul>
                                 <li><a href="https://www.veterinary.wiki/category/our-doctors/">Наши врачи</a></li>
                                 <li><a href="https://www.veterinary.wiki/blog/">Блог</a></li>
+                                <li><a href="https://www.facebook.com/groups/veterinarywiki/" rel="nofollow" target="_blank"><img style="width: 24px;height: 24px;" src="/wp-content/themes/woopress/images/main-img/Facebook.svg" alt="facebook"></a></li>
                             </ul>
                             <p class="cop-text">Все права защищены Veterinary Wiki 2020</p>
                         </div>

@@ -44,5 +44,5 @@
 	endif;
 
 	// Display Comment Form
-	comment_form(array('title_reply' => '<span>' . __('Оставить комментарий', ETHEME_DOMAIN) . '</span>'));
+	comment_form(array('title_reply' => '<div class="com">' . __('Оставить комментарий', ETHEME_DOMAIN) . '</div>'));
 ?>

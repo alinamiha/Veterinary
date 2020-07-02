@@ -27,7 +27,7 @@
 <div class="directory-container <?php echo (!$full_width) ? 'container' : 'blog-full-width'; ?>">
 	<div class="page-content sidebar-position-<?php esc_attr_e( $l['sidebar'] ); ?> sidebar-mobile-<?php esc_attr_e( $l['sidebar-mobile'] ); ?>">
 		<div class="row flex">
-			<div class="content <?php esc_attr_e( $l['content-class'] ); ?>">
+			<div class="content <?php esc_attr_e( $l['content-class'] ); ?>" style="flex: 100%;">
 				<div class="directory-page <?php if ($content_layout == 'grid'): ?>blog-masonry row<?php endif ?>">
                     <div class="block-with-post">
 
@@ -46,7 +46,7 @@
                                 <?php
                                 foreach ($categories as $category) {
 
-                                    echo '<div class="test_sub_cat"><p>' . $category->name . '</p><div style="border: 1px solid #E5E5E5;"></div>';
+                                    echo '<div class="test_sub_cat" style="width: 100%;"><p>' . $category->name . '</p><div style="border: 1px solid #E5E5E5;"></div>';
                                     # получаем записи из рубрики
                                     $myposts = get_posts(array(
                                         'numberposts' => -1,
@@ -57,7 +57,7 @@
                                     global $post;
                                     foreach ($myposts as $post) {
                                         setup_postdata($post);
-                                        echo '<li class="entry-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+                                        echo '<li class="entry-title"><a href="' . get_permalink() . '" style="font-weight: normal">' . get_the_title() . '</a></li>';
                                     }
                                     wp_reset_postdata(); // сбрасываем глобальную переменную пост
                                     echo '</ul>';
@@ -128,7 +128,8 @@
                     $tags = wp_get_post_tags($post->ID);
                     if ($tags) { ?>
                         <?php
-                        $first_tag = $tags[1]->term_id;
+                        
+                        $first_tag = $tags[2]->term_id;
                         $args = array(
                             'tag__in' => array($first_tag),
                             'post__not_in' => array($post->ID),

@@ -7821,7 +7821,7 @@ article.post h2,article.post h1 {
   font-weight: normal;
   font-size: 15px;
   line-height: 135.19%;
-  color: #5E5E5E;
+  color: #000000;
   margin-bottom: 20px;
 }
 .comments-list .media-body {
@@ -19719,7 +19719,7 @@ input[type="search"].validation-failed{
 .directory-page .entry-title a,.link-alone{
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 18px;
   line-height: 194.69%;
   color: #000000;
@@ -19742,11 +19742,13 @@ input[type="search"].validation-failed{
 .block-with-post .test_sub_cat p{
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  /*font-weight: 500;*/
   line-height: 135.19%;
-  color: #C4C4C4;
   margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 22px;
+  color: #2C2C2C;
+
 }
 .directory-container .active a,.directory-container .active{
   font-family: Roboto;
@@ -19759,6 +19761,7 @@ input[type="search"].validation-failed{
 .block-with-post .test_sub_cat ul{
   margin-top: 10px;
 }
+
 .block-with-post{
   display: flex;
   flex-direction: column;
@@ -19807,7 +19810,7 @@ input[type="search"].validation-failed{
   font-weight: normal;
   font-size: 18px;
   line-height: 135.19%;
-  color: #5E5E5E;
+  color: #000000;
 
 }
 .directory-container .gen-cat .content ul li{
@@ -20045,6 +20048,16 @@ transition: all .2s ease-in-out;
 @media (min-width: 992px) {
   .row .col-md-3 {
     width: auto;
+  }
+}
+@media (min-width:680px){
+  .block-with-post .test_sub_cat ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: 280px;
+    flex-wrap: wrap;
+    height: 100%;
   }
 }
 

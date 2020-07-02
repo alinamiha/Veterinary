@@ -2147,6 +2147,10 @@ $('.prettySocial').prettySocial();
         $('body').toggleClass('overflow');
     });
 
+    // var $classDoc = document.getElementById('reply-title');
+    // $classDoc.find('.com').innerHTML = '<div class="block-footer-post"></div>';
+
+
     $('.carousel-item:first-child').addClass('active');
     $('.all-cat-ill').on('click', function () {
         $('.menu-all-cat').slideToggle();
